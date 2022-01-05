@@ -1,0 +1,4 @@
+framework module Forethought {
+  header "Forethought-Swift.h"
+  requires objc
+}
