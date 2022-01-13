@@ -39,7 +39,8 @@ class ViewControllerWithZenDesk: UIViewController, ForethoughtDelegate {
     
     //this is completely optional. Use this if you want to support an external integration, such as Zendesk
     //if not needed, remove this, and the forethoughtVC.delegate = self line above
-    func startChatRequested(name: String?, email: String?, question: String?) {
+    func startChatRequested(handoffData: ForethoughtHandoffData) {
+
 //        do {
 //            // Configure Zendesk Widget
 //            let messagingConfiguration = MessagingConfiguration()
@@ -49,12 +50,12 @@ class ViewControllerWithZenDesk: UIViewController, ForethoughtDelegate {
 //
 //            // update Chat instance
 //            let chatAPIConfiguration = ChatAPIConfiguration()
-//            chatAPIConfiguration.visitorInfo = VisitorInfo(name: name ?? "", email: email ?? "", phoneNumber: "")
+//            chatAPIConfiguration.visitorInfo = VisitorInfo(name: handoffData.name ?? "", email: handoffData.email ?? "", handoffData.phoneNumber: "")
 //            Chat.instance?.configuration = chatAPIConfiguration
 //
 //            // send question
 //            Chat.connectionProvider?.connect()
-//            Chat.chatProvider?.sendMessage(question ?? "")
+//            Chat.chatProvider?.sendMessage(handoffData.question ?? "")
 //            Chat.connectionProvider?.disconnect()
 //
 //            // Build and present Zendesk Chat

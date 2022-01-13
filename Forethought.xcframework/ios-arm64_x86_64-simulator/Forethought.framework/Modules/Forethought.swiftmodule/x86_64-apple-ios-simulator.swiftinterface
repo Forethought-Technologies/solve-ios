@@ -1,14 +1,13 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Forethought
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Forethought
 import Foundation
 import Swift
-import SwiftUI
 import UIKit
 import WebKit
 import _Concurrency
 public protocol ForethoughtDelegate : AnyObject {
-  func startChatRequested(name: Swift.String?, email: Swift.String?, question: Swift.String?)
+  func startChatRequested(handoffData: Forethought.ForethoughtHandoffData)
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ForethoughtViewController : UIKit.UIViewController, UIKit.UIScrollViewDelegate, WebKit.WKNavigationDelegate {
   @_Concurrency.MainActor(unsafe) weak public var delegate: Forethought.ForethoughtDelegate?
@@ -22,12 +21,7 @@ public protocol ForethoughtDelegate : AnyObject {
 extension Forethought.ForethoughtViewController : WebKit.WKScriptMessageHandler {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
 }
-public struct ForethoughtView : SwiftUI.View {
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
-    get
-  }
-  public init(key: Swift.String)
-  public typealias Body = @_opaqueReturnTypeOf("$s11Forethought0A4ViewV4bodyQrvp", 0) __
-}
 public struct ForethoughtInfo {
+}
+public struct ForethoughtHandoffData {
 }
