@@ -66,6 +66,7 @@
 		FA3484D5277A5BBD009BF233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA3484D7277A5BBD009BF233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA3484D8277A5BBD009BF233 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA4E77202792196000591494 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		FAD4BC93275FF60300998560 /* Demo-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD4BC95275FF60300998560 /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
 		FAD4BC97275FF60300998560 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -171,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				FA0DDD4327861AA9004F1F05 /* Forethought.xcframework */,
+				FA4E77202792196000591494 /* Package.swift */,
 				FAD4BC94275FF60300998560 /* Demo-SwiftUI */,
 				FA34848D2773BC1D009BF233 /* Demo-Swift */,
 				FA3484C5277A5BBC009BF233 /* Demo-ObjC */,
@@ -262,7 +264,7 @@
 					};
 				};
 			};
-			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Forethought" */;
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Forethought-Demos" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -876,7 +878,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_2 /* Build configuration list for PBXProject "Forethought" */ = {
+		OBJ_2 /* Build configuration list for PBXProject "Forethought-Demos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_3 /* Debug */,
