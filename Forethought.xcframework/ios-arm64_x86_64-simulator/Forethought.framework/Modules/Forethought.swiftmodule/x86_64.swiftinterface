@@ -24,4 +24,10 @@ extension Forethought.ForethoughtViewController : WebKit.WKScriptMessageHandler 
 public struct ForethoughtInfo {
 }
 public struct ForethoughtHandoffData {
+  public let question: Swift.String?
+  public let name: Swift.String?
+  public let email: Swift.String?
+  public let integration: Swift.String?
+  public let department: Swift.String?
+  public let additionalParameters: [Swift.String : Any]?
 }
