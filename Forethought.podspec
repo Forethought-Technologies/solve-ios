@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Forethought"
-  spec.version      = "0.1.2"
+  spec.version      = "0.1.3"
   spec.summary      = "Transform customer service with human-centered AI"
   spec.description  = "Transform customer service with human-centered AI using the Forethought Solve AI Chatbot"
 
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/Forethought-Technologies/solve-ios.git", :tag => "v#{spec.version}" }
+  spec.source       = { :git => "https://github.com/Forethought-Technologies/solve-ios.git", :tag => "#{spec.version}" }
   spec.vendored_frameworks = "Forethought.xcframework"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
