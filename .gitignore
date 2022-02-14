@@ -90,3 +90,10 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# PluginSampleApp
+#
+# The sample app is not needed for the public repository
+
+Plugins/PluginSampleApp/*
+Plugins/Plugins.xcodeproj

@@ -8,26 +8,25 @@
 import UIKit
 import Forethought
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ForethoughtDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
     }
     
     @IBAction func contactSupportTapped(_ sender: UIButton) {
-
-        let API_KEY = "__YOUR_KEY_HERE__"
-        
-        let dataParameters = ["language":"EN", "tracking-email":"test@ft.ai"]
-        let forethoughtVC = ForethoughtViewController(API_KEY: API_KEY, dataParameters: dataParameters)
-        forethoughtVC.title = "Custom Title Here"
-        
-        //you can present as a modal, or onto your navigation stack, whichever you prefer
-        self.present(forethoughtVC, animated: true, completion: nil)
-  //    navigationController?.pushViewController(forethoughtView, animated: false)
+        ForethoughtSDK.delegate = self
+        ForethoughtSDK.show()
     }
-
+    
+    
+    //this is completely optional. Use this if you want to support an external integration, such as Zendesk
+    //if not needed, remove this, and the forethoughtVC.delegate = self line above
+    func startChatRequested(handoffData: ForethoughtHandoffData) {
+        print("Chat Requested: \(handoffData)")
+    }
 
 }
 

@@ -6,8 +6,9 @@
 //
 
 #import <UIKit/UIKit.h>
+@import Forethought;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<ForethoughtDelegate>
 
 - (IBAction)contactSupportTapped:(id)sender;
 

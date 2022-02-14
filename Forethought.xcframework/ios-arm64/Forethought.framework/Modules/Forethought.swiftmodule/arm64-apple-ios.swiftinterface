@@ -1,33 +1,55 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Forethought
+import CloudKit
 import Foundation
 import Swift
 import UIKit
 import WebKit
 import _Concurrency
-public protocol ForethoughtDelegate : AnyObject {
-  func startChatRequested(handoffData: Forethought.ForethoughtHandoffData)
+@objc public protocol ForethoughtPlugin {
+  @objc var pluginName: Swift.String { get }
+  @objc optional func showPluginOnLaunch() -> Swift.Bool
+  @objc optional func forethoughtViewLoaded(viewController: UIKit.UIViewController)
+  @objc optional func forethoughtViewDidAppear()
+  @objc func forethoughtHandoffRequested(handoffData: Forethought.ForethoughtHandoffData)
+  @objc optional func forethoughtViewClosed()
 }
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ForethoughtViewController : UIKit.UIViewController, UIKit.UIScrollViewDelegate, WebKit.WKNavigationDelegate {
-  @_Concurrency.MainActor(unsafe) weak public var delegate: Forethought.ForethoughtDelegate?
-  @objc @_Concurrency.MainActor(unsafe) public init(API_KEY: Swift.String, configParameters: [Swift.String : Swift.String]? = nil, dataParameters: [Swift.String : Swift.String]? = nil)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func loadView()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+extension Forethought.ForethoughtPlugin {
+  public func showPluginOnLaunch() -> Swift.Bool
+}
+@objc public protocol ForethoughtDelegate {
+  @objc func startChatRequested(handoffData: Forethought.ForethoughtHandoffData)
+}
+@_hasMissingDesignatedInitializers @objc public class ForethoughtHandoffData : ObjectiveC.NSObject {
+  final public let question: Swift.String?
+  final public let name: Swift.String?
+  final public let email: Swift.String?
+  final public let integration: Swift.String?
+  final public let department: Swift.String?
+  final public let additionalParameters: [Swift.String : Any]?
   @objc deinit
 }
-extension Forethought.ForethoughtViewController : WebKit.WKScriptMessageHandler {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
-}
-public struct ForethoughtInfo {
-}
-public struct ForethoughtHandoffData {
-  public let question: Swift.String?
-  public let name: Swift.String?
-  public let email: Swift.String?
-  public let integration: Swift.String?
-  public let department: Swift.String?
-  public let additionalParameters: [Swift.String : Any]?
+@objc @_inheritsConvenienceInitializers public class ForethoughtSDK : ObjectiveC.NSObject {
+  @objc public static var dataParameters: [Swift.String : Swift.String] {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc public static var configParameters: [Swift.String : Swift.String] {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc public static var delegate: Forethought.ForethoughtDelegate? {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc public static var plugins: [Forethought.ForethoughtPlugin] {
+    @objc get
+  }
+  @objc public class func start(apiKey: Swift.String, plugins: [Forethought.ForethoughtPlugin] = [])
+  @objc public class func show()
+  @objc public class func show(fromNavigationController navigationController: UIKit.UINavigationController? = nil)
+  @objc public class func hide(animated: Swift.Bool, completion: @escaping () -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
 }
