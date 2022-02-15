@@ -19,11 +19,7 @@ You will need a valid API key in order to use the Forethought Solve SDK. In addi
 1. Forethought is also available through [CocoaPods](http://cocoapods.org). If you have not yet installed Cocoapods, follow their guide to install and create a Podfile [here](https://guides.cocoapods.org/using/getting-started.html).  
 
 1. In your Podfile, add the following line:
-<<<<<<< HEAD
    ```ruby
-=======
-   ```
->>>>>>> origin/main
    pod 'Forethought'
    ```
 1. Run the following command:
