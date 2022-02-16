@@ -191,8 +191,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
-@import UIKit;
-@import WebKit;
+@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -210,30 +209,104 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class ForethoughtHandoffData;
+
+/// An optional delegate to handle custom integrations for handoffs
+SWIFT_PROTOCOL("_TtP11Forethought19ForethoughtDelegate_")
+@protocol ForethoughtDelegate
+/// Notifies the app that a chat has been requested that has not been handled by a plugin
+- (void)startChatRequestedWithHandoffData:(ForethoughtHandoffData * _Nonnull)handoffData;
+@end
+
+
+/// A structured object for handling a handoff from Forethought Solve to another integration
+SWIFT_CLASS("_TtC11Forethought22ForethoughtHandoffData")
+@interface ForethoughtHandoffData : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class NSString;
-@class NSCoder;
 @class NSNumber;
-@class WKWebView;
-@class WKNavigationAction;
-@class NSBundle;
+@class UIViewController;
 
-SWIFT_CLASS("_TtC11Forethought25ForethoughtViewController")
-@interface ForethoughtViewController : UIViewController <UIScrollViewDelegate, WKNavigationDelegate>
-- (nonnull instancetype)initWithAPI_KEY:(NSString * _Nonnull)API_KEY configParameters:(NSDictionary<NSString *, NSString *> * _Nullable)configParameters dataParameters:(NSDictionary<NSString *, NSString *> * _Nullable)dataParameters OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)loadView;
-- (void)viewDidLoad;
-- (void)viewWillDisappear:(BOOL)animated;
-- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(SWIFT_NOESCAPE void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+/// An extendable plugin object for third-party integrations to extend Forethought.
+/// This can be used to automatically handle hand-offs from Forethought and other third-party libraries.
+SWIFT_PROTOCOL("_TtP11Forethought17ForethoughtPlugin_")
+@protocol ForethoughtPlugin
+/// The name of the plugin that will be used.
+/// This must match the integration key in the ForethoughtHandoffData in order to be used.
+@property (nonatomic, readonly, copy) NSString * _Nonnull pluginName;
+@optional
+/// Should we show the plugin on launch instead of Forethought?
+/// If so, show the plugin, and return true
+- (BOOL)showPluginOnLaunch SWIFT_WARN_UNUSED_RESULT;
+/// Notifies the plugin that the Forethought View has been loaded
+- (void)forethoughtViewLoadedWithViewController:(UIViewController * _Nonnull)viewController;
+/// Notifies the plugin that the Forethought View has been shown
+- (void)forethoughtViewDidAppear;
+@required
+/// Use this method to handle your plugin requesting to be shown from Forethought
+- (void)forethoughtHandoffRequestedWithHandoffData:(ForethoughtHandoffData * _Nonnull)handoffData;
+@optional
+/// Notifies the plugin that the Forethought View has been closed
+- (void)forethoughtViewClosed;
 @end
 
-@class WKUserContentController;
-@class WKScriptMessage;
+@class UINavigationController;
 
-@interface ForethoughtViewController (SWIFT_EXTENSION(Forethought)) <WKScriptMessageHandler>
-- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+/// Forethought.ai
+/// Forethought allows you to utilize artificial intelligence to handle your customer support requests
+/// Learn more at http://www.forethought.ai
+SWIFT_CLASS("_TtC11Forethought14ForethoughtSDK")
+@interface ForethoughtSDK : NSObject
+/// A dictionary of data parameters that can be passed from your app to Forethought
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSDictionary<NSString *, NSString *> * _Nonnull dataParameters;)
++ (NSDictionary<NSString *, NSString *> * _Nonnull)dataParameters SWIFT_WARN_UNUSED_RESULT;
++ (void)setDataParameters:(NSDictionary<NSString *, NSString *> * _Nonnull)newValue;
+/// A dictionary of configuration parameters that can be passed from your app to Forethought
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSDictionary<NSString *, NSString *> * _Nonnull configParameters;)
++ (NSDictionary<NSString *, NSString *> * _Nonnull)configParameters SWIFT_WARN_UNUSED_RESULT;
++ (void)setConfigParameters:(NSDictionary<NSString *, NSString *> * _Nonnull)newValue;
+/// An optional delegate to handle custom integrations for handoffs
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <ForethoughtDelegate> _Nullable delegate;)
++ (id <ForethoughtDelegate> _Nullable)delegate SWIFT_WARN_UNUSED_RESULT;
++ (void)setDelegate:(id <ForethoughtDelegate> _Nullable)newValue;
+/// Pass in 3rd party plugins to support handoffs automatically to Forethought
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<id <ForethoughtPlugin>> * _Nonnull plugins;)
++ (NSArray<id <ForethoughtPlugin>> * _Nonnull)plugins SWIFT_WARN_UNUSED_RESULT;
+/// To be called within your application:didFinishLaunchingWithOptions method. Initializes Forethought
++ (void)startWithApiKey:(NSString * _Nonnull)apiKey plugins:(NSArray<id <ForethoughtPlugin>> * _Nonnull)plugins;
+/// Show the Forethought Solve View, Presented Modally
++ (void)show;
+/// Show the Forethought Solve View, Either Modally or pushed onto your navigation Stack
+/// If you’re unsure what to use, simply pass in ‘nil’
+/// <ul>
+///   <li>
+///     Parameters:
+///   </li>
+///   <li>
+///     fromNavigationController: The UINavigationController you would like to use to push onto your view stack.
+///   </li>
+/// </ul>
++ (void)showFromNavigationController:(UINavigationController * _Nullable)navigationController;
+/// Hides the Forethought Solve View
+/// If presented with a UINavigationController, this will pop the screen
+/// <ul>
+///   <li>
+///     Parameters:
+///   </li>
+///   <li>
+///     animated: Should the view be hidden with an animation, or instantly
+///   </li>
+///   <li>
+///     completion: A completion handler to be called when the view has finished hiding
+///   </li>
+/// </ul>
++ (void)hideWithAnimated:(BOOL)animated completion:(void (^ _Nonnull)(void))completion;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -433,8 +506,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import Foundation;
-@import UIKit;
-@import WebKit;
+@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -452,30 +524,104 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class ForethoughtHandoffData;
+
+/// An optional delegate to handle custom integrations for handoffs
+SWIFT_PROTOCOL("_TtP11Forethought19ForethoughtDelegate_")
+@protocol ForethoughtDelegate
+/// Notifies the app that a chat has been requested that has not been handled by a plugin
+- (void)startChatRequestedWithHandoffData:(ForethoughtHandoffData * _Nonnull)handoffData;
+@end
+
+
+/// A structured object for handling a handoff from Forethought Solve to another integration
+SWIFT_CLASS("_TtC11Forethought22ForethoughtHandoffData")
+@interface ForethoughtHandoffData : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class NSString;
-@class NSCoder;
 @class NSNumber;
-@class WKWebView;
-@class WKNavigationAction;
-@class NSBundle;
+@class UIViewController;
 
-SWIFT_CLASS("_TtC11Forethought25ForethoughtViewController")
-@interface ForethoughtViewController : UIViewController <UIScrollViewDelegate, WKNavigationDelegate>
-- (nonnull instancetype)initWithAPI_KEY:(NSString * _Nonnull)API_KEY configParameters:(NSDictionary<NSString *, NSString *> * _Nullable)configParameters dataParameters:(NSDictionary<NSString *, NSString *> * _Nullable)dataParameters OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)loadView;
-- (void)viewDidLoad;
-- (void)viewWillDisappear:(BOOL)animated;
-- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(SWIFT_NOESCAPE void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+/// An extendable plugin object for third-party integrations to extend Forethought.
+/// This can be used to automatically handle hand-offs from Forethought and other third-party libraries.
+SWIFT_PROTOCOL("_TtP11Forethought17ForethoughtPlugin_")
+@protocol ForethoughtPlugin
+/// The name of the plugin that will be used.
+/// This must match the integration key in the ForethoughtHandoffData in order to be used.
+@property (nonatomic, readonly, copy) NSString * _Nonnull pluginName;
+@optional
+/// Should we show the plugin on launch instead of Forethought?
+/// If so, show the plugin, and return true
+- (BOOL)showPluginOnLaunch SWIFT_WARN_UNUSED_RESULT;
+/// Notifies the plugin that the Forethought View has been loaded
+- (void)forethoughtViewLoadedWithViewController:(UIViewController * _Nonnull)viewController;
+/// Notifies the plugin that the Forethought View has been shown
+- (void)forethoughtViewDidAppear;
+@required
+/// Use this method to handle your plugin requesting to be shown from Forethought
+- (void)forethoughtHandoffRequestedWithHandoffData:(ForethoughtHandoffData * _Nonnull)handoffData;
+@optional
+/// Notifies the plugin that the Forethought View has been closed
+- (void)forethoughtViewClosed;
 @end
 
-@class WKUserContentController;
-@class WKScriptMessage;
+@class UINavigationController;
 
-@interface ForethoughtViewController (SWIFT_EXTENSION(Forethought)) <WKScriptMessageHandler>
-- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+/// Forethought.ai
+/// Forethought allows you to utilize artificial intelligence to handle your customer support requests
+/// Learn more at http://www.forethought.ai
+SWIFT_CLASS("_TtC11Forethought14ForethoughtSDK")
+@interface ForethoughtSDK : NSObject
+/// A dictionary of data parameters that can be passed from your app to Forethought
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSDictionary<NSString *, NSString *> * _Nonnull dataParameters;)
++ (NSDictionary<NSString *, NSString *> * _Nonnull)dataParameters SWIFT_WARN_UNUSED_RESULT;
++ (void)setDataParameters:(NSDictionary<NSString *, NSString *> * _Nonnull)newValue;
+/// A dictionary of configuration parameters that can be passed from your app to Forethought
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSDictionary<NSString *, NSString *> * _Nonnull configParameters;)
++ (NSDictionary<NSString *, NSString *> * _Nonnull)configParameters SWIFT_WARN_UNUSED_RESULT;
++ (void)setConfigParameters:(NSDictionary<NSString *, NSString *> * _Nonnull)newValue;
+/// An optional delegate to handle custom integrations for handoffs
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <ForethoughtDelegate> _Nullable delegate;)
++ (id <ForethoughtDelegate> _Nullable)delegate SWIFT_WARN_UNUSED_RESULT;
++ (void)setDelegate:(id <ForethoughtDelegate> _Nullable)newValue;
+/// Pass in 3rd party plugins to support handoffs automatically to Forethought
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<id <ForethoughtPlugin>> * _Nonnull plugins;)
++ (NSArray<id <ForethoughtPlugin>> * _Nonnull)plugins SWIFT_WARN_UNUSED_RESULT;
+/// To be called within your application:didFinishLaunchingWithOptions method. Initializes Forethought
++ (void)startWithApiKey:(NSString * _Nonnull)apiKey plugins:(NSArray<id <ForethoughtPlugin>> * _Nonnull)plugins;
+/// Show the Forethought Solve View, Presented Modally
++ (void)show;
+/// Show the Forethought Solve View, Either Modally or pushed onto your navigation Stack
+/// If you’re unsure what to use, simply pass in ‘nil’
+/// <ul>
+///   <li>
+///     Parameters:
+///   </li>
+///   <li>
+///     fromNavigationController: The UINavigationController you would like to use to push onto your view stack.
+///   </li>
+/// </ul>
++ (void)showFromNavigationController:(UINavigationController * _Nullable)navigationController;
+/// Hides the Forethought Solve View
+/// If presented with a UINavigationController, this will pop the screen
+/// <ul>
+///   <li>
+///     Parameters:
+///   </li>
+///   <li>
+///     animated: Should the view be hidden with an animation, or instantly
+///   </li>
+///   <li>
+///     completion: A completion handler to be called when the view has finished hiding
+///   </li>
+/// </ul>
++ (void)hideWithAnimated:(BOOL)animated completion:(void (^ _Nonnull)(void))completion;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

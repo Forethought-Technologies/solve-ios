@@ -14,18 +14,13 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (IBAction)contactSupportTapped:(id)sender {
+    ForethoughtSDK.delegate = self;
+    [ForethoughtSDK show];
 }
 
-- (IBAction)contactSupportTapped:(id)sender {
-    NSString *key = @"__YOUR_KEY_HERE__";
-    NSDictionary *dataParameters = @{@"language":@"EN", @"tracking-email":@"test@ft.ai"};
-        
-    ForethoughtViewController *vc = [[ForethoughtViewController alloc] initWithAPI_KEY:key configParameters:NULL dataParameters:dataParameters];
-    
-    [self presentViewController:vc animated:true completion:nil];
+- (void)startChatRequestedWithHandoffData:(ForethoughtHandoffData * _Nonnull)handoffData {
+    NSLog(@"Custom Handoff Requested");
 }
 
 @end

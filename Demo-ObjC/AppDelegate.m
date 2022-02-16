@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+@import Forethought;
 
 @interface AppDelegate ()
 
@@ -15,7 +16,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [ForethoughtSDK startWithApiKey:@"__YOUR_KEY_HERE__" plugins:@[]];
+    ForethoughtSDK.dataParameters = @{@"language": @"EN", @"tracking-email":@"test@ft.ai"};
     return YES;
 }
 

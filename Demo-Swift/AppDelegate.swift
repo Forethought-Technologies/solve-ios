@@ -6,14 +6,14 @@
 //
 
 import UIKit
+import Forethought
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        ForethoughtSDK.start(apiKey: "__YOUR_KEY_HERE__")
+        ForethoughtSDK.dataParameters = ["language":"EN", "tracking-email":"test@ft.ai"]
         return true
     }
 

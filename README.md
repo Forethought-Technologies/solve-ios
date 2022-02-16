@@ -19,7 +19,7 @@ You will need a valid API key in order to use the Forethought Solve SDK. In addi
 1. Forethought is also available through [CocoaPods](http://cocoapods.org). If you have not yet installed Cocoapods, follow their guide to install and create a Podfile [here](https://guides.cocoapods.org/using/getting-started.html).  
 
 1. In your Podfile, add the following line:
-   ```
+   ```ruby
    pod 'Forethought'
    ```
 1. Run the following command:
@@ -30,18 +30,22 @@ You will need a valid API key in order to use the Forethought Solve SDK. In addi
    
 ## Usage
 
-1. On the view controller that you would like to use Forethought, add the following import statement:
+1. In your AppDelegate.swift file, add the following lines:
    ```swift
-   import 'Forethought'
+	 ForethoughtSDK.start(apiKey: "__YOUR_KEY_HERE__")
    ```
 1. When you'd like to call the Forethought SDK, add the following:
    ```swift
+	 //At the top of your file
+   import 'Forethought'
+	 
+	 //Inside of your class
    @IBAction func contactSupportTapped() {
-       let forethoughtVC = ForethoughtViewController(API_KEY: "__YOUR_KEY_HERE__")
-       self.present(forethoughtVC, animated: true, completion: nil)
+       ForethoughtSDK.show()
    }
    ```
-1. Replace `__YOUR_KEY_HERE__` with the API key you received from Forethought
+1. Replace `__YOUR_KEY_HERE__` with your API key you received from Forethought
+
 
 ## Optional Additions
 
@@ -49,10 +53,8 @@ You will need a valid API key in order to use the Forethought Solve SDK. In addi
 
 You can send custom parameters that you define directly with Forethought like this:
    ```swift
-   let API_KEY = "__YOUR_API_KEY_HERE__"
-   let configParameters = ["exampleConfigKey": "exampleConfigValue"]
-   let dataParameters = ["language":"EN", "tracking-email":"test@ft.ai"]
-   let forethoughtVC = ForethoughtViewController(API_KEY: API_KEY, configParameters: configParameters, dataParameters: dataParameters)
+	 ForethoughtSDK.configParameters = ["exampleConfigKey": "exampleConfigValue"]
+   ForethoughtSDK.dataParameters = ["language":"EN", "tracking-email":"test@ft.ai"]
    ```
 
 ### Use of a Navigation Controller Directly
@@ -60,9 +62,7 @@ You can send custom parameters that you define directly with Forethought like th
 You can also attach the Forethought SDK directly onto your navigation stack, like this:
    ```swift
    @IBAction func contactSupportTapped() {
-       let forethoughtVC = ForethoughtViewController(API_KEY: "__YOUR_KEY_HERE__")
-       forethoughtVC.title = "Custom Title Here"
-       self.navigationController?.pushViewController(forethoughtView, animated: false)
+       ForethoughtSDK.show(fromNavigationController: self.navigationController)
    }
    ```
  
@@ -72,7 +72,7 @@ If you'd like to handoff Forethought chat to another provider, you can do so by 
 
 1. Set a delegate to your Forethought SDK. Do this before presenting the screen:
    ```swift
-   forethoughtVC.delegate = self
+   ForethoughtSDK.delegate = self
    ```
 1. Make sure that the object that you set conforms to the ForethoughtDelegate protocol
    ```swift
