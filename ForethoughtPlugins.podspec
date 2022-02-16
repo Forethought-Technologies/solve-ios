@@ -10,8 +10,7 @@ Pod::Spec.new do |spec|
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
   spec.license      = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
 
-  spec.author             = { "Matthew Knippen" => "matthew@zwiffer.com" }
-  # spec.authors            = { "Matthew Knippen" => "matthew@zwiffer.com" }
+  spec.author             = { "Forethought Engineering" => "eng@forethought.ai" }
   spec.social_media_url   = "https://twitter.com/forethought_ai"
 
   spec.platform     	= :ios, "11.0"
