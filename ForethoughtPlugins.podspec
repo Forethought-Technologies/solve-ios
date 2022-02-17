@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   
   spec.subspec "KustomerPlugin" do |ss|
   	ss.source_files = "Plugins/Kustomer/*.swift"
-		ss.dependency 'KustomerChat', '~> 2.4.11'
+		ss.dependency 'KustomerChat', '~> 2.5'
   end
 
 end
