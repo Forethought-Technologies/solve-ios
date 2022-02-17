@@ -14,18 +14,21 @@ let package = Package(
             targets: ["Forethought"]),
 				.library(
 						name: "KustomerPlugin",
-						targets: ["KustumorPlugin"])
+						targets: ["KustomerPlugin"]),
+    ],
+    dependencies: [
+        .package(url: "https://github.com/kustomer/kustomer-ios", from: "2.5.4")
     ],
     targets: [
         .binaryTarget(
             name: "Forethought", 
-            path: "Forethought.xcframework")
+            path: "Forethought.xcframework"),
 				.target(
 						name: "KustomerPlugin",
 						dependencies:[
 							.target(name: "Forethought"),
-							.package(url: "https://github.com/kustomer/kustomer-ios", from: "2.4.11")
-						]),
-						path: "Plugins/Kustomer")
+							.product(name: "kustomer-ios", package: "kustomer-ios"),
+						],
+						path: "Plugins/Kustomer")					
     ]
 )
