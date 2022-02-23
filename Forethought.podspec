@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "Forethought"
-  spec.version      = "0.2.0"
+  spec.version      = "0.3.0"
   spec.summary      = "Transform customer service with human-centered AI"
   spec.description  = "Transform customer service with human-centered AI using the Forethought Solve AI Chatbot"
   spec.homepage     = "https://forethought.ai"
