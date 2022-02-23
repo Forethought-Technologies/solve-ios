@@ -23,6 +23,11 @@ Pod::Spec.new do |spec|
 
   spec.dependency "Forethought", $FORETHOUGHT_VERSION
   
+  spec.subspec "ZendeskPlugin" do |ss|
+  	ss.source_files = "Plugins/Zendesk/*.swift"
+		ss.dependency 'ZendeskChatSDK', '~> 2.11'
+  end
+	
   spec.subspec "KustomerPlugin" do |ss|
   	ss.source_files = "Plugins/Kustomer/*.swift"
 		ss.dependency 'KustomerChat', '~> 2.5'

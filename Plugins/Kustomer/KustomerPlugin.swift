@@ -24,6 +24,7 @@ public enum KustomerResumeConversationSetting {
 public class KustomerPlugin: ForethoughtPlugin {
     weak var forethoughtVC: UIViewController?
     /// Choose the initial question you would like to present when loading Kustomer (this comes from the agent)
+    /// NOTE: This will only be used if we don't already have the conversation from Forethought to hand off to the user
     public var initialQuestion: String? = "Hello, how can I help you today?"
     /// When Kustomer has an open or unread conversation, choose what you would like to happen when the user asks for support.
     /// Default is .showForUnreadMessagePromptForOpen
@@ -98,18 +99,42 @@ public class KustomerPlugin: ForethoughtPlugin {
             Kustomer.chatProvider.describeCurrentCustomer(email: email)
         }
         
-        var initialMessages: [String] = []
+        //if we have the conversation or question that the user asked Forethought, let's send that along to Kustomer
+        //The needs to make a quick API call before being shown. If we don't have the question, let's just show it directly
         if let question = handoffData.question {
-            initialMessages.append(question)
+            Kustomer.chatProvider.createConversation(firstCustomerMessage: question) { result in
+                switch result {
+                case .success(let item):
+                    if let id = item.conversation.id {
+                        ForethoughtSDK.hide(animated: false) {
+                            Kustomer.openConversation(id: id, animated: true, completion: nil)
+                        }
+                    } else {
+                        self.fallbackStartConversation()
+                    }
+                case .failure(let error):
+                    print("error: \(error.localizedDescription)")
+                    self.fallbackStartConversation()
+                }
+            }
+        } else {
+            self.fallbackStartConversation()
         }
-        if let initialQuestion = self.initialQuestion {
-            initialMessages.append(initialQuestion)
+    }
+    
+    /// If creating a new conversation and setting the initial question fails in someway, show via the traditional method
+    func fallbackStartConversation() {
+        ForethoughtSDK.hide(animated: false) {
+            var initialMessages: [String] = []
+            if let initialQuestion = self.initialQuestion {
+                initialMessages.append(initialQuestion)
+            }
+            
+            Kustomer.openNewConversation(initialMessages: initialMessages, afterCreateConversation: { conversation in
+                //This isn't called until the user manually sends the first message
+                print("Conversation Creatad: \(conversation)")
+            }, animated: false)
         }
-        
-        Kustomer.openNewConversation(initialMessages: initialMessages, afterCreateConversation: { conversation in
-            //This isn't called until the user manually sends the first message
-            print("Conversation Created: \(conversation)")
-        }, animated: false)
     }
     
     func promptToContinueConversation(openConversationCount: Int) {

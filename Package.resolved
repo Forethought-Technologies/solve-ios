@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "kustomer-ios",
+        "repositoryURL": "https://github.com/kustomer/kustomer-ios",
+        "state": {
+          "branch": null,
+          "revision": "5e5d38cdf2dc01222ec9d3e010b56073679ca5a5",
+          "version": "2.5.4"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
