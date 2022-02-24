@@ -66,6 +66,10 @@ You can also attach the Forethought SDK directly onto your navigation stack, lik
    }
    ```
  
+### Plugins
+
+To attach Forethought to another chat provider, such as Zendesk or Kustomer, please check out our [plugin documentation](Plugins/Plugins.md).
+ 
 ### Custom Handoff Methods
 
 If you'd like to handoff Forethought chat to another provider, you can do so by implementing the following:
@@ -86,3 +90,7 @@ If you'd like to handoff Forethought chat to another provider, you can do so by 
    }
    ```
 1. Add your custom implementation here. You can inspect and view the handoffData object to access history of the previous chat.
+
+## Documentation
+
+Documentation has been provided as a .doccarchive to enable full documentation directly inside Xcode. To use, simply double-click on Forethought.doccarchive, and Xcode will handle the rest.
