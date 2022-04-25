@@ -4,6 +4,10 @@ This repository contains the framework and instructions for the Forethought iOS 
 
 You will need a valid API key in order to use the Forethought Solve SDK. In additon to the instructions below, you can also view sample apps written in Objective-C & Swift, as well as a custom implementation for SwiftUI.
 
+<p align="center">
+	<img src="https://github.com/Forethought-Technologies/solve-ios/blob/main/demo.gif" width="296" height="640">
+</p>
+
 ## Installation
 
 ### Swift Package Manager
