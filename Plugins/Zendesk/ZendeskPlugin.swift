@@ -65,9 +65,11 @@ public class ZendeskPlugin: ForethoughtPlugin {
                     self.presentModally(viewController: viewController)
                 }
             }
+            ForethoughtSDK.sendHandoffResponse(success: true)
         }
         catch {
             print("FT - Could not initiate Zendesk chat")
+            ForethoughtSDK.sendHandoffResponse(success: false)
         }
     }
     

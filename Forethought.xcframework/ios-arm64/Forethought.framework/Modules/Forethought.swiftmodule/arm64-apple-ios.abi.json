@@ -1,0 +1,3963 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Forethought",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "Forethought"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ForethoughtViewController",
+        "printedName": "ForethoughtViewController",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "Forethought.ForethoughtDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A14ViewControllerC8delegateAA0A8Delegate_pSgvp",
+            "mangledName": "$s11Forethought0A14ViewControllerC8delegateAA0A8Delegate_pSgvp",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership"
+            ],
+            "fixedbinaryorder": 0,
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Forethought.ForethoughtDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ForethoughtDelegate",
+                        "printedName": "Forethought.ForethoughtDelegate",
+                        "usr": "c:@M@Forethought@objc(pl)ForethoughtDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A14ViewControllerC8delegateAA0A8Delegate_pSgvg",
+                "mangledName": "$s11Forethought0A14ViewControllerC8delegateAA0A8Delegate_pSgvg",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Forethought.ForethoughtDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ForethoughtDelegate",
+                        "printedName": "Forethought.ForethoughtDelegate",
+                        "usr": "c:@M@Forethought@objc(pl)ForethoughtDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A14ViewControllerC8delegateAA0A8Delegate_pSgvs",
+                "mangledName": "$s11Forethought0A14ViewControllerC8delegateAA0A8Delegate_pSgvs",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A14ViewControllerC8delegateAA0A8Delegate_pSgvM",
+                "mangledName": "$s11Forethought0A14ViewControllerC8delegateAA0A8Delegate_pSgvM",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "plugins",
+            "printedName": "plugins",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Forethought.ForethoughtPlugin]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ForethoughtPlugin",
+                    "printedName": "Forethought.ForethoughtPlugin",
+                    "usr": "c:@M@Forethought@objc(pl)ForethoughtPlugin"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A14ViewControllerC7pluginsSayAA0A6Plugin_pGvp",
+            "mangledName": "$s11Forethought0A14ViewControllerC7pluginsSayAA0A6Plugin_pGvp",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Forethought.ForethoughtPlugin]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ForethoughtPlugin",
+                        "printedName": "Forethought.ForethoughtPlugin",
+                        "usr": "c:@M@Forethought@objc(pl)ForethoughtPlugin"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A14ViewControllerC7pluginsSayAA0A6Plugin_pGvg",
+                "mangledName": "$s11Forethought0A14ViewControllerC7pluginsSayAA0A6Plugin_pGvg",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Forethought.ForethoughtPlugin]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ForethoughtPlugin",
+                        "printedName": "Forethought.ForethoughtPlugin",
+                        "usr": "c:@M@Forethought@objc(pl)ForethoughtPlugin"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A14ViewControllerC7pluginsSayAA0A6Plugin_pGvs",
+                "mangledName": "$s11Forethought0A14ViewControllerC7pluginsSayAA0A6Plugin_pGvs",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A14ViewControllerC7pluginsSayAA0A6Plugin_pGvM",
+                "mangledName": "$s11Forethought0A14ViewControllerC7pluginsSayAA0A6Plugin_pGvM",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "apiKey",
+            "printedName": "apiKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A14ViewControllerC6apiKey33_C2FA0C31598A565301F177E9B94DB16CLLSSvp",
+            "mangledName": "$s11Forethought0A14ViewControllerC6apiKey33_C2FA0C31598A565301F177E9B94DB16CLLSSvp",
+            "moduleName": "Forethought",
+            "isInternal": true,
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 2,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A14ViewControllerC3url33_C2FA0C31598A565301F177E9B94DB16CLLSSvp",
+            "mangledName": "$s11Forethought0A14ViewControllerC3url33_C2FA0C31598A565301F177E9B94DB16CLLSSvp",
+            "moduleName": "Forethought",
+            "isInternal": true,
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 3,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "webView",
+            "printedName": "webView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "WebKit.WKWebView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKWebView",
+                    "printedName": "WebKit.WKWebView",
+                    "usr": "c:objc(cs)WKWebView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A14ViewControllerC03webB033_C2FA0C31598A565301F177E9B94DB16CLLSo05WKWebB0CSgvp",
+            "mangledName": "$s11Forethought0A14ViewControllerC03webB033_C2FA0C31598A565301F177E9B94DB16CLLSo05WKWebB0CSgvp",
+            "moduleName": "Forethought",
+            "isInternal": true,
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 4,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "activityIndicator",
+            "printedName": "activityIndicator",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "UIKit.UIActivityIndicatorView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIActivityIndicatorView",
+                    "printedName": "UIKit.UIActivityIndicatorView",
+                    "usr": "c:objc(cs)UIActivityIndicatorView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A14ViewControllerC17activityIndicator33_C2FA0C31598A565301F177E9B94DB16CLLSo010UIActivityeB0CSgvp",
+            "mangledName": "$s11Forethought0A14ViewControllerC17activityIndicator33_C2FA0C31598A565301F177E9B94DB16CLLSo010UIActivityeB0CSgvp",
+            "moduleName": "Forethought",
+            "isInternal": true,
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 5,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "previousNavBarState",
+            "printedName": "previousNavBarState",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A14ViewControllerC19previousNavBarState33_C2FA0C31598A565301F177E9B94DB16CLLSbSgvp",
+            "mangledName": "$s11Forethought0A14ViewControllerC19previousNavBarState33_C2FA0C31598A565301F177E9B94DB16CLLSbSgvp",
+            "moduleName": "Forethought",
+            "isInternal": true,
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 6,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "hideTopBar",
+            "printedName": "hideTopBar",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A14ViewControllerC10hideTopBarSbvp",
+            "mangledName": "$s11Forethought0A14ViewControllerC10hideTopBarSbvp",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 7,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A14ViewControllerC10hideTopBarSbvg",
+                "mangledName": "$s11Forethought0A14ViewControllerC10hideTopBarSbvg",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A14ViewControllerC10hideTopBarSbvs",
+                "mangledName": "$s11Forethought0A14ViewControllerC10hideTopBarSbvs",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A14ViewControllerC10hideTopBarSbvM",
+                "mangledName": "$s11Forethought0A14ViewControllerC10hideTopBarSbvM",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(API_KEY:configParameters:dataParameters:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ForethoughtViewController",
+                "printedName": "Forethought.ForethoughtViewController",
+                "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController(im)initWithAPI_KEY:configParameters:dataParameters:",
+            "mangledName": "$s11Forethought0A14ViewControllerC7API_KEY16configParameters04dataG0ACSS_SDyS2SGSgAHtcfc",
+            "moduleName": "Forethought",
+            "objc_name": "initWithAPI_KEY:configParameters:dataParameters:",
+            "declAttributes": [
+              "Custom",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Forethought.ForethoughtViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ForethoughtViewController",
+                    "printedName": "Forethought.ForethoughtViewController",
+                    "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController(im)initWithCoder:",
+            "mangledName": "$s11Forethought0A14ViewControllerC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "Forethought",
+            "overriding": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "loadView",
+            "printedName": "loadView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController(im)loadView",
+            "mangledName": "$s11Forethought0A14ViewControllerC04loadB0yyF",
+            "moduleName": "Forethought",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "loadView",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController(im)viewDidLoad",
+            "mangledName": "$s11Forethought0A14ViewControllerC11viewDidLoadyyF",
+            "moduleName": "Forethought",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidAppear",
+            "printedName": "viewDidAppear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController(im)viewDidAppear:",
+            "mangledName": "$s11Forethought0A14ViewControllerC13viewDidAppearyySbF",
+            "moduleName": "Forethought",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewDidAppear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setupLoadingIndicator",
+            "printedName": "setupLoadingIndicator()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Forethought0A14ViewControllerC21setupLoadingIndicatoryyF",
+            "mangledName": "$s11Forethought0A14ViewControllerC21setupLoadingIndicatoryyF",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewWillDisappear",
+            "printedName": "viewWillDisappear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController(im)viewWillDisappear:",
+            "mangledName": "$s11Forethought0A14ViewControllerC17viewWillDisappearyySbF",
+            "moduleName": "Forethought",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewWillDisappear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopZooming",
+            "printedName": "stopZooming()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Forethought0A14ViewControllerC11stopZoomingyyF",
+            "mangledName": "$s11Forethought0A14ViewControllerC11stopZoomingyyF",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:decidePolicyFor:decisionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationAction",
+                "printedName": "WebKit.WKNavigationAction",
+                "usr": "c:objc(cs)WKNavigationAction"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WebKit.WKNavigationActionPolicy) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigationActionPolicy",
+                    "printedName": "WebKit.WKNavigationActionPolicy",
+                    "usr": "c:@E@WKNavigationActionPolicy"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController(im)webView:decidePolicyForNavigationAction:decisionHandler:",
+            "mangledName": "$s11Forethought0A14ViewControllerC03webB0_15decidePolicyFor15decisionHandlerySo05WKWebB0C_So18WKNavigationActionCySo0klF0VXEtF",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "objc_name": "webView:decidePolicyForNavigationAction:decisionHandler:",
+            "declAttributes": [
+              "ObjC",
+              "Custom",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:didStartProvisionalNavigation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "WebKit.WKNavigation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigation",
+                    "printedName": "WebKit.WKNavigation",
+                    "usr": "c:objc(cs)WKNavigation"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController(im)webView:didStartProvisionalNavigation:",
+            "mangledName": "$s11Forethought0A14ViewControllerC03webB0_29didStartProvisionalNavigationySo05WKWebB0C_So12WKNavigationCSgtF",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "objc_name": "webView:didStartProvisionalNavigation:",
+            "declAttributes": [
+              "ObjC",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:didFinish:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "WebKit.WKNavigation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigation",
+                    "printedName": "WebKit.WKNavigation",
+                    "usr": "c:objc(cs)WKNavigation"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController(im)webView:didFinishNavigation:",
+            "mangledName": "$s11Forethought0A14ViewControllerC03webB0_9didFinishySo05WKWebB0C_So12WKNavigationCSgtF",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "objc_name": "webView:didFinishNavigation:",
+            "declAttributes": [
+              "ObjC",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ForethoughtViewController",
+                "printedName": "Forethought.ForethoughtViewController",
+                "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s11Forethought0A14ViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "Forethought",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "userContentController",
+            "printedName": "userContentController(_:didReceive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKUserContentController",
+                "printedName": "WebKit.WKUserContentController",
+                "usr": "c:objc(cs)WKUserContentController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKScriptMessage",
+                "printedName": "WebKit.WKScriptMessage",
+                "usr": "c:objc(cs)WKScriptMessage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Forethought@objc(cs)ForethoughtViewController(im)userContentController:didReceiveScriptMessage:",
+            "mangledName": "$s11Forethought0A14ViewControllerC011userContentC0_10didReceiveySo06WKUsereC0C_So15WKScriptMessageCtF",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "objc_name": "userContentController:didReceiveScriptMessage:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "endCurrentChat",
+            "printedName": "endCurrentChat()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Forethought0A14ViewControllerC14endCurrentChatyyF",
+            "mangledName": "$s11Forethought0A14ViewControllerC14endCurrentChatyyF",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendHandoffStatus",
+            "printedName": "sendHandoffStatus(success:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Forethought0A14ViewControllerC17sendHandoffStatus7successySb_tF",
+            "mangledName": "$s11Forethought0A14ViewControllerC17sendHandoffStatus7successySb_tF",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController",
+        "mangledName": "$s11Forethought0A14ViewControllerC",
+        "moduleName": "Forethought",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Forethought"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Forethought"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ForethoughtPlugin",
+        "printedName": "ForethoughtPlugin",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pluginName",
+            "printedName": "pluginName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Forethought@objc(pl)ForethoughtPlugin(py)pluginName",
+            "mangledName": "$s11Forethought0A6PluginP10pluginNameSSvp",
+            "moduleName": "Forethought",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Forethought@objc(pl)ForethoughtPlugin(im)pluginName",
+                "mangledName": "$s11Forethought0A6PluginP10pluginNameSSvg",
+                "moduleName": "Forethought",
+                "genericSig": "<τ_0_0 where τ_0_0 : Forethought.ForethoughtPlugin>",
+                "sugared_genericSig": "<Self where Self : Forethought.ForethoughtPlugin>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "showPluginOnLaunch",
+            "printedName": "showPluginOnLaunch()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Forethought@objc(pl)ForethoughtPlugin(im)showPluginOnLaunch",
+            "mangledName": "$s11Forethought0A6PluginP04showB8OnLaunchSbyF",
+            "moduleName": "Forethought",
+            "genericSig": "<τ_0_0 where τ_0_0 : Forethought.ForethoughtPlugin>",
+            "sugared_genericSig": "<Self where Self : Forethought.ForethoughtPlugin>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "forethoughtViewLoaded",
+            "printedName": "forethoughtViewLoaded(viewController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Forethought@objc(pl)ForethoughtPlugin(im)forethoughtViewLoadedWithViewController:",
+            "mangledName": "$s11Forethought0A6PluginP21forethoughtViewLoaded14viewControllerySo06UIViewG0C_tF",
+            "moduleName": "Forethought",
+            "genericSig": "<τ_0_0 where τ_0_0 : Forethought.ForethoughtPlugin>",
+            "sugared_genericSig": "<Self where Self : Forethought.ForethoughtPlugin>",
+            "protocolReq": true,
+            "objc_name": "forethoughtViewLoadedWithViewController:",
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "forethoughtViewDidAppear",
+            "printedName": "forethoughtViewDidAppear()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Forethought@objc(pl)ForethoughtPlugin(im)forethoughtViewDidAppear",
+            "mangledName": "$s11Forethought0A6PluginP24forethoughtViewDidAppearyyF",
+            "moduleName": "Forethought",
+            "genericSig": "<τ_0_0 where τ_0_0 : Forethought.ForethoughtPlugin>",
+            "sugared_genericSig": "<Self where Self : Forethought.ForethoughtPlugin>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "forethoughtHandoffRequested",
+            "printedName": "forethoughtHandoffRequested(handoffData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ForethoughtHandoffData",
+                "printedName": "Forethought.ForethoughtHandoffData",
+                "usr": "c:@M@Forethought@objc(cs)ForethoughtHandoffData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Forethought@objc(pl)ForethoughtPlugin(im)forethoughtHandoffRequestedWithHandoffData:",
+            "mangledName": "$s11Forethought0A6PluginP27forethoughtHandoffRequested11handoffDatayAA0adG0C_tF",
+            "moduleName": "Forethought",
+            "genericSig": "<τ_0_0 where τ_0_0 : Forethought.ForethoughtPlugin>",
+            "sugared_genericSig": "<Self where Self : Forethought.ForethoughtPlugin>",
+            "protocolReq": true,
+            "objc_name": "forethoughtHandoffRequestedWithHandoffData:",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "forethoughtViewClosed",
+            "printedName": "forethoughtViewClosed()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Forethought@objc(pl)ForethoughtPlugin(im)forethoughtViewClosed",
+            "mangledName": "$s11Forethought0A6PluginP21forethoughtViewClosedyyF",
+            "moduleName": "Forethought",
+            "genericSig": "<τ_0_0 where τ_0_0 : Forethought.ForethoughtPlugin>",
+            "sugared_genericSig": "<Self where Self : Forethought.ForethoughtPlugin>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showPluginOnLaunch",
+            "printedName": "showPluginOnLaunch()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Forethought0A6PluginPAAE04showB8OnLaunchSbyF",
+            "mangledName": "$s11Forethought0A6PluginPAAE04showB8OnLaunchSbyF",
+            "moduleName": "Forethought",
+            "genericSig": "<τ_0_0 where τ_0_0 : Forethought.ForethoughtPlugin>",
+            "sugared_genericSig": "<Self where Self : Forethought.ForethoughtPlugin>",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@Forethought@objc(pl)ForethoughtPlugin",
+        "mangledName": "$s11Forethought0A6PluginP",
+        "moduleName": "Forethought",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Forethought",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ForethoughtDelegate",
+        "printedName": "ForethoughtDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "startChatRequested",
+            "printedName": "startChatRequested(handoffData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ForethoughtHandoffData",
+                "printedName": "Forethought.ForethoughtHandoffData",
+                "usr": "c:@M@Forethought@objc(cs)ForethoughtHandoffData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Forethought@objc(pl)ForethoughtDelegate(im)startChatRequestedWithHandoffData:",
+            "mangledName": "$s11Forethought0A8DelegateP18startChatRequested11handoffDatayAA0a7HandoffG0C_tF",
+            "moduleName": "Forethought",
+            "genericSig": "<τ_0_0 where τ_0_0 : Forethought.ForethoughtDelegate>",
+            "sugared_genericSig": "<Self where Self : Forethought.ForethoughtDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@Forethought@objc(pl)ForethoughtDelegate",
+        "mangledName": "$s11Forethought0A8DelegateP",
+        "moduleName": "Forethought",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ForethoughtHandoffData",
+        "printedName": "ForethoughtHandoffData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "event",
+            "printedName": "event",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A11HandoffDataC5eventSSvp",
+            "mangledName": "$s11Forethought0A11HandoffDataC5eventSSvp",
+            "moduleName": "Forethought",
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A11HandoffDataC5eventSSvg",
+                "mangledName": "$s11Forethought0A11HandoffDataC5eventSSvg",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "question",
+            "printedName": "question",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A11HandoffDataC8questionSSSgvp",
+            "mangledName": "$s11Forethought0A11HandoffDataC8questionSSSgvp",
+            "moduleName": "Forethought",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A11HandoffDataC8questionSSSgvg",
+                "mangledName": "$s11Forethought0A11HandoffDataC8questionSSSgvg",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A11HandoffDataC4nameSSSgvp",
+            "mangledName": "$s11Forethought0A11HandoffDataC4nameSSSgvp",
+            "moduleName": "Forethought",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A11HandoffDataC4nameSSSgvg",
+                "mangledName": "$s11Forethought0A11HandoffDataC4nameSSSgvg",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "email",
+            "printedName": "email",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A11HandoffDataC5emailSSSgvp",
+            "mangledName": "$s11Forethought0A11HandoffDataC5emailSSSgvp",
+            "moduleName": "Forethought",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A11HandoffDataC5emailSSSgvg",
+                "mangledName": "$s11Forethought0A11HandoffDataC5emailSSSgvg",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "integration",
+            "printedName": "integration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A11HandoffDataC11integrationSSSgvp",
+            "mangledName": "$s11Forethought0A11HandoffDataC11integrationSSSgvp",
+            "moduleName": "Forethought",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A11HandoffDataC11integrationSSSgvg",
+                "mangledName": "$s11Forethought0A11HandoffDataC11integrationSSSgvg",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "department",
+            "printedName": "department",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A11HandoffDataC10departmentSSSgvp",
+            "mangledName": "$s11Forethought0A11HandoffDataC10departmentSSSgvp",
+            "moduleName": "Forethought",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A11HandoffDataC10departmentSSSgvg",
+                "mangledName": "$s11Forethought0A11HandoffDataC10departmentSSSgvg",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "additionalParameters",
+            "printedName": "additionalParameters",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A11HandoffDataC20additionalParametersSDySSypGSgvp",
+            "mangledName": "$s11Forethought0A11HandoffDataC20additionalParametersSDySSypGSgvp",
+            "moduleName": "Forethought",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A11HandoffDataC20additionalParametersSDySSypGSgvg",
+                "mangledName": "$s11Forethought0A11HandoffDataC20additionalParametersSDySSypGSgvg",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(dictionary:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Forethought.ForethoughtHandoffData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ForethoughtHandoffData",
+                    "printedName": "Forethought.ForethoughtHandoffData",
+                    "usr": "c:@M@Forethought@objc(cs)ForethoughtHandoffData"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11Forethought0A11HandoffDataC10dictionaryACSgSDySSypG_tcfc",
+            "mangledName": "$s11Forethought0A11HandoffDataC10dictionaryACSgSDySSypG_tcfc",
+            "moduleName": "Forethought",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ForethoughtHandoffData",
+                "printedName": "Forethought.ForethoughtHandoffData",
+                "usr": "c:@M@Forethought@objc(cs)ForethoughtHandoffData"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtHandoffData(im)init",
+            "mangledName": "$s11Forethought0A11HandoffDataCACycfc",
+            "moduleName": "Forethought",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Forethought@objc(cs)ForethoughtHandoffData",
+        "mangledName": "$s11Forethought0A11HandoffDataC",
+        "moduleName": "Forethought",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Forethought",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Forethought",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CloudKit",
+        "printedName": "CloudKit",
+        "declKind": "Import",
+        "moduleName": "Forethought"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Forethought"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ForethoughtSDK",
+        "printedName": "ForethoughtSDK",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "dataParameters",
+            "printedName": "dataParameters",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cpy)dataParameters",
+            "mangledName": "$s11Forethought0A3SDKC14dataParametersSDyS2SGvpZ",
+            "moduleName": "Forethought",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cm)dataParameters",
+                "mangledName": "$s11Forethought0A3SDKC14dataParametersSDyS2SGvgZ",
+                "moduleName": "Forethought",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cm)setDataParameters:",
+                "mangledName": "$s11Forethought0A3SDKC14dataParametersSDyS2SGvsZ",
+                "moduleName": "Forethought",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A3SDKC14dataParametersSDyS2SGvMZ",
+                "mangledName": "$s11Forethought0A3SDKC14dataParametersSDyS2SGvMZ",
+                "moduleName": "Forethought",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "configParameters",
+            "printedName": "configParameters",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cpy)configParameters",
+            "mangledName": "$s11Forethought0A3SDKC16configParametersSDyS2SGvpZ",
+            "moduleName": "Forethought",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cm)configParameters",
+                "mangledName": "$s11Forethought0A3SDKC16configParametersSDyS2SGvgZ",
+                "moduleName": "Forethought",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cm)setConfigParameters:",
+                "mangledName": "$s11Forethought0A3SDKC16configParametersSDyS2SGvsZ",
+                "moduleName": "Forethought",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A3SDKC16configParametersSDyS2SGvMZ",
+                "mangledName": "$s11Forethought0A3SDKC16configParametersSDyS2SGvMZ",
+                "moduleName": "Forethought",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Forethought.ForethoughtDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ForethoughtDelegate",
+                    "printedName": "Forethought.ForethoughtDelegate",
+                    "usr": "c:@M@Forethought@objc(pl)ForethoughtDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cpy)delegate",
+            "mangledName": "$s11Forethought0A3SDKC8delegateAA0A8Delegate_pSgvpZ",
+            "moduleName": "Forethought",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Forethought.ForethoughtDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ForethoughtDelegate",
+                        "printedName": "Forethought.ForethoughtDelegate",
+                        "usr": "c:@M@Forethought@objc(pl)ForethoughtDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cm)delegate",
+                "mangledName": "$s11Forethought0A3SDKC8delegateAA0A8Delegate_pSgvgZ",
+                "moduleName": "Forethought",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Forethought.ForethoughtDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ForethoughtDelegate",
+                        "printedName": "Forethought.ForethoughtDelegate",
+                        "usr": "c:@M@Forethought@objc(pl)ForethoughtDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cm)setDelegate:",
+                "mangledName": "$s11Forethought0A3SDKC8delegateAA0A8Delegate_pSgvsZ",
+                "moduleName": "Forethought",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A3SDKC8delegateAA0A8Delegate_pSgvMZ",
+                "mangledName": "$s11Forethought0A3SDKC8delegateAA0A8Delegate_pSgvMZ",
+                "moduleName": "Forethought",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "plugins",
+            "printedName": "plugins",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Forethought.ForethoughtPlugin]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ForethoughtPlugin",
+                    "printedName": "Forethought.ForethoughtPlugin",
+                    "usr": "c:@M@Forethought@objc(pl)ForethoughtPlugin"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cpy)plugins",
+            "mangledName": "$s11Forethought0A3SDKC7pluginsSayAA0A6Plugin_pGvpZ",
+            "moduleName": "Forethought",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Forethought.ForethoughtPlugin]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ForethoughtPlugin",
+                        "printedName": "Forethought.ForethoughtPlugin",
+                        "usr": "c:@M@Forethought@objc(pl)ForethoughtPlugin"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cm)plugins",
+                "mangledName": "$s11Forethought0A3SDKC7pluginsSayAA0A6Plugin_pGvgZ",
+                "moduleName": "Forethought",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(apiKey:plugins:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Forethought.ForethoughtPlugin]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ForethoughtPlugin",
+                    "printedName": "Forethought.ForethoughtPlugin",
+                    "usr": "c:@M@Forethought@objc(pl)ForethoughtPlugin"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cm)startWithApiKey:plugins:",
+            "mangledName": "$s11Forethought0A3SDKC5start6apiKey7pluginsySS_SayAA0A6Plugin_pGtFZ",
+            "moduleName": "Forethought",
+            "static": true,
+            "isOpen": true,
+            "objc_name": "startWithApiKey:plugins:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "show",
+            "printedName": "show()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cm)show",
+            "mangledName": "$s11Forethought0A3SDKC4showyyFZ",
+            "moduleName": "Forethought",
+            "static": true,
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "show",
+            "printedName": "show(fromNavigationController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UINavigationController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UINavigationController",
+                    "printedName": "UIKit.UINavigationController",
+                    "usr": "c:objc(cs)UINavigationController"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cm)showFromNavigationController:",
+            "mangledName": "$s11Forethought0A3SDKC4show24fromNavigationControllerySo012UINavigationF0CSg_tFZ",
+            "moduleName": "Forethought",
+            "static": true,
+            "isOpen": true,
+            "objc_name": "showFromNavigationController:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hide",
+            "printedName": "hide(animated:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cm)hideWithAnimated:completion:",
+            "mangledName": "$s11Forethought0A3SDKC4hide8animated10completionySb_yyctFZ",
+            "moduleName": "Forethought",
+            "static": true,
+            "isOpen": true,
+            "objc_name": "hideWithAnimated:completion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendHandoffResponse",
+            "printedName": "sendHandoffResponse(success:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cm)sendHandoffResponseWithSuccess:",
+            "mangledName": "$s11Forethought0A3SDKC19sendHandoffResponse7successySb_tFZ",
+            "moduleName": "Forethought",
+            "static": true,
+            "isOpen": true,
+            "objc_name": "sendHandoffResponseWithSuccess:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ForethoughtSDK",
+                "printedName": "Forethought.ForethoughtSDK",
+                "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(im)init",
+            "mangledName": "$s11Forethought0A3SDKCACycfc",
+            "moduleName": "Forethought",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK",
+        "mangledName": "$s11Forethought0A3SDKC",
+        "moduleName": "Forethought",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ForethoughtDataStore",
+        "printedName": "ForethoughtDataStore",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ForethoughtDataStore",
+                "printedName": "Forethought.ForethoughtDataStore",
+                "usr": "s:11Forethought0A9DataStoreC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A9DataStoreC6sharedACvpZ",
+            "mangledName": "$s11Forethought0A9DataStoreC6sharedACvpZ",
+            "moduleName": "Forethought",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ForethoughtDataStore",
+                    "printedName": "Forethought.ForethoughtDataStore",
+                    "usr": "s:11Forethought0A9DataStoreC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC6sharedACvgZ",
+                "mangledName": "$s11Forethought0A9DataStoreC6sharedACvgZ",
+                "moduleName": "Forethought",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "apiKey",
+            "printedName": "apiKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A9DataStoreC6apiKeySSvp",
+            "mangledName": "$s11Forethought0A9DataStoreC6apiKeySSvp",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC6apiKeySSvg",
+                "mangledName": "$s11Forethought0A9DataStoreC6apiKeySSvg",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC6apiKeySSvs",
+                "mangledName": "$s11Forethought0A9DataStoreC6apiKeySSvs",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC6apiKeySSvM",
+                "mangledName": "$s11Forethought0A9DataStoreC6apiKeySSvM",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dataParameters",
+            "printedName": "dataParameters",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A9DataStoreC14dataParametersSDyS2SGvp",
+            "mangledName": "$s11Forethought0A9DataStoreC14dataParametersSDyS2SGvp",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC14dataParametersSDyS2SGvg",
+                "mangledName": "$s11Forethought0A9DataStoreC14dataParametersSDyS2SGvg",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC14dataParametersSDyS2SGvs",
+                "mangledName": "$s11Forethought0A9DataStoreC14dataParametersSDyS2SGvs",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC14dataParametersSDyS2SGvM",
+                "mangledName": "$s11Forethought0A9DataStoreC14dataParametersSDyS2SGvM",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "configParameters",
+            "printedName": "configParameters",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A9DataStoreC16configParametersSDyS2SGvp",
+            "mangledName": "$s11Forethought0A9DataStoreC16configParametersSDyS2SGvp",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 2,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC16configParametersSDyS2SGvg",
+                "mangledName": "$s11Forethought0A9DataStoreC16configParametersSDyS2SGvg",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC16configParametersSDyS2SGvs",
+                "mangledName": "$s11Forethought0A9DataStoreC16configParametersSDyS2SGvs",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC16configParametersSDyS2SGvM",
+                "mangledName": "$s11Forethought0A9DataStoreC16configParametersSDyS2SGvM",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "plugins",
+            "printedName": "plugins",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Forethought.ForethoughtPlugin]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ForethoughtPlugin",
+                    "printedName": "Forethought.ForethoughtPlugin",
+                    "usr": "c:@M@Forethought@objc(pl)ForethoughtPlugin"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A9DataStoreC7pluginsSayAA0A6Plugin_pGvp",
+            "mangledName": "$s11Forethought0A9DataStoreC7pluginsSayAA0A6Plugin_pGvp",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 3,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Forethought.ForethoughtPlugin]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ForethoughtPlugin",
+                        "printedName": "Forethought.ForethoughtPlugin",
+                        "usr": "c:@M@Forethought@objc(pl)ForethoughtPlugin"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC7pluginsSayAA0A6Plugin_pGvg",
+                "mangledName": "$s11Forethought0A9DataStoreC7pluginsSayAA0A6Plugin_pGvg",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Forethought.ForethoughtPlugin]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ForethoughtPlugin",
+                        "printedName": "Forethought.ForethoughtPlugin",
+                        "usr": "c:@M@Forethought@objc(pl)ForethoughtPlugin"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC7pluginsSayAA0A6Plugin_pGvs",
+                "mangledName": "$s11Forethought0A9DataStoreC7pluginsSayAA0A6Plugin_pGvs",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC7pluginsSayAA0A6Plugin_pGvM",
+                "mangledName": "$s11Forethought0A9DataStoreC7pluginsSayAA0A6Plugin_pGvM",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "Forethought.ForethoughtDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A9DataStoreC8delegateAA0A8Delegate_pSgvp",
+            "mangledName": "$s11Forethought0A9DataStoreC8delegateAA0A8Delegate_pSgvp",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership"
+            ],
+            "fixedbinaryorder": 4,
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Forethought.ForethoughtDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ForethoughtDelegate",
+                        "printedName": "Forethought.ForethoughtDelegate",
+                        "usr": "c:@M@Forethought@objc(pl)ForethoughtDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC8delegateAA0A8Delegate_pSgvg",
+                "mangledName": "$s11Forethought0A9DataStoreC8delegateAA0A8Delegate_pSgvg",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Forethought.ForethoughtDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ForethoughtDelegate",
+                        "printedName": "Forethought.ForethoughtDelegate",
+                        "usr": "c:@M@Forethought@objc(pl)ForethoughtDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC8delegateAA0A8Delegate_pSgvs",
+                "mangledName": "$s11Forethought0A9DataStoreC8delegateAA0A8Delegate_pSgvs",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC8delegateAA0A8Delegate_pSgvM",
+                "mangledName": "$s11Forethought0A9DataStoreC8delegateAA0A8Delegate_pSgvM",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "currentVC",
+            "printedName": "currentVC",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "Forethought.ForethoughtViewController?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A9DataStoreC9currentVCAA0A14ViewControllerCSgvp",
+            "mangledName": "$s11Forethought0A9DataStoreC9currentVCAA0A14ViewControllerCSgvp",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership"
+            ],
+            "fixedbinaryorder": 5,
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Forethought.ForethoughtViewController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ForethoughtViewController",
+                        "printedName": "Forethought.ForethoughtViewController",
+                        "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC9currentVCAA0A14ViewControllerCSgvg",
+                "mangledName": "$s11Forethought0A9DataStoreC9currentVCAA0A14ViewControllerCSgvg",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Forethought.ForethoughtViewController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ForethoughtViewController",
+                        "printedName": "Forethought.ForethoughtViewController",
+                        "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC9currentVCAA0A14ViewControllerCSgvs",
+                "mangledName": "$s11Forethought0A9DataStoreC9currentVCAA0A14ViewControllerCSgvs",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC9currentVCAA0A14ViewControllerCSgvM",
+                "mangledName": "$s11Forethought0A9DataStoreC9currentVCAA0A14ViewControllerCSgvM",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ForethoughtDataStore",
+                "printedName": "Forethought.ForethoughtDataStore",
+                "usr": "s:11Forethought0A9DataStoreC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11Forethought0A9DataStoreCACycfc",
+            "mangledName": "$s11Forethought0A9DataStoreCACycfc",
+            "moduleName": "Forethought",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11Forethought0A9DataStoreC",
+        "mangledName": "$s11Forethought0A9DataStoreC",
+        "moduleName": "Forethought",
+        "isOpen": true,
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UINavigationController",
+        "printedName": "UINavigationController",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "pushViewController",
+            "printedName": "pushViewController(_:animated:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So22UINavigationControllerC11ForethoughtE08pushViewB0_8animated10completionySo06UIViewB0C_SbyyctF",
+            "mangledName": "$sSo22UINavigationControllerC11ForethoughtE08pushViewB0_8animated10completionySo06UIViewB0C_SbyyctF",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "popViewController",
+            "printedName": "popViewController(animated:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So22UINavigationControllerC11ForethoughtE07popViewB08animated10completionySb_yyctF",
+            "mangledName": "$sSo22UINavigationControllerC11ForethoughtE07popViewB08animated10completionySb_yyctF",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UINavigationController",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UINavigationController",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 160,
+      "length": 38,
+      "value": "\"https:\/\/solve-widget.forethought.ai\/\""
+    },
+    {
+      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "Array",
+      "offset": 447,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 475,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 500,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 964,
+      "length": 26,
+      "value": "\"&config-ft-hide-nav=true\""
+    },
+    {
+      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 998,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1063,
+      "length": 26,
+      "value": "\"&config-ft-hide-nav=true\""
+    },
+    {
+      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 882,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 274,
+      "length": 25,
+      "value": "\"Forethought.ForethoughtViewController\""
+    },
+    {
+      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtHandoffData.swift",
+      "kind": "StringLiteral",
+      "offset": 579,
+      "length": 22,
+      "value": "\"Forethought.ForethoughtHandoffData\""
+    },
+    {
+      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "kind": "Array",
+      "offset": 1824,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 4915,
+      "length": 19,
+      "value": "\"__YOUR_KEY_HERE__\""
+    },
+    {
+      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "kind": "Dictionary",
+      "offset": 4983,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "kind": "Dictionary",
+      "offset": 5032,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "kind": "Array",
+      "offset": 5080,
+      "length": 2,
+      "value": "[]"
+    }
+  ]
+}

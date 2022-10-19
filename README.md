@@ -57,7 +57,6 @@ You will need a valid API key in order to use the Forethought Solve SDK. In addi
 
 You can send custom parameters that you define directly with Forethought like this:
    ```swift
-	 ForethoughtSDK.configParameters = ["exampleConfigKey": "exampleConfigValue"]
    ForethoughtSDK.dataParameters = ["language":"EN", "tracking-email":"test@ft.ai"]
    ```
 

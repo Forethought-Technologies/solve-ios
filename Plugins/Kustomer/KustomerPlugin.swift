@@ -33,17 +33,11 @@ public class KustomerPlugin: ForethoughtPlugin {
     /// The integration name that connects Kustomer to Forethought. This should not be altered.
     public var pluginName = "kustomer"
     
-    var openConversationCount: Int {
-        get {
-            return Kustomer.chatProvider.openConversationCount()
-        }
-    }
+    /// The number of open conversations available to the user via Kustomer. Fetched at launch
+    var openConversationCount: Int = 0
     
-    var unreadConversationCount: Int {
-        get {
-            return Kustomer.chatProvider.getUnreadCount()
-        }
-    }
+    /// The number of open conversations with an unread message available to the user. Fetched at launch
+    var unreadConversationCount: Int = 0
     
     /// Configures the Kustomer SDK and attaches it directly to Forethought
     ///
@@ -52,6 +46,26 @@ public class KustomerPlugin: ForethoughtPlugin {
     ///    - options: Set custom settings for the Kustomer integration. See Kustomer documentation for more information.
     public init(apiKey: String, options: KustomerOptions? = nil) {
         let _ = Kustomer.configure(apiKey: apiKey, options: options, launchOptions: nil)
+        self.getConversationCounts()
+    }
+    
+    // Fetches the conversation count and the unread count via the Kustomer SDK.
+    private func getConversationCounts() {
+        KustomerClient.shared.getOpenConversationCount { result in
+            do {
+                self.openConversationCount = try result.get()
+            } catch {
+                self.openConversationCount = 0
+            }
+        }
+        
+        KustomerClient.shared.getUnreadCount { result in
+            do {
+                self.unreadConversationCount = try result.get()
+            } catch {
+                self.unreadConversationCount = 0
+            }
+        }
     }
     
     /// For the ForethoughtPlugin Protocol. Chooses whether to show the Kustomer Plugin on launch, based on the resumeConversation parameter
@@ -125,14 +139,23 @@ public class KustomerPlugin: ForethoughtPlugin {
     /// If creating a new conversation and setting the initial question fails in someway, show via the traditional method
     func fallbackStartConversation() {
         ForethoughtSDK.hide(animated: false) {
-            var initialMessages: [String] = []
+//            var initialMessages: [String] = []
+//            if let initialQuestion = self.initialQuestion {
+//                initialMessages.append(initialQuestion)
+//            }
+//
+//            Kustomer.openNewConversation(initialMessages: initialMessages, afterCreateConversation: { conversation in
+//                //This isn't called until the user manually sends the first message
+//                print("Conversation Created: \(conversation)")
+//            }, animated: false)
+            
+            var message: KUSInitialMessage? = nil
             if let initialQuestion = self.initialQuestion {
-                initialMessages.append(initialQuestion)
+                message = KUSInitialMessage(body: initialQuestion, direction: .user)
             }
             
-            Kustomer.openNewConversation(initialMessages: initialMessages, afterCreateConversation: { conversation in
-                //This isn't called until the user manually sends the first message
-                print("Conversation Creatad: \(conversation)")
+            KustomerClient.shared.startNewConversation(initialMessage: message, afterCreateConversation: { conversation in
+                print("Conversation Created: \(conversation)")
             }, animated: false)
         }
     }
