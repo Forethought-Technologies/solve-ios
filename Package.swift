@@ -17,8 +17,8 @@ let package = Package(
 						targets: ["KustomerPlugin"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/kustomer/kustomer-ios.git", from: "2.5.4"),
-        .package(url: "https://github.com/zendesk/chat_sdk_ios.git", from: "2.11.0"),
+        .package(url: "https://github.com/kustomer/kustomer-ios", from: "2.5.4"),
+        .package(url: "https://github.com/zendesk/chat_sdk_ios", exact: "3.0.0"),
     ],
     targets: [
         .binaryTarget(
@@ -35,7 +35,7 @@ let package = Package(
 						name: "ZendeskPlugin",
 						dependencies:[
 							.target(name: "Forethought"),
-							.product(name: "ZendeskChatSDK", package: "ZendeskChatSDK"),
+							.product(name: "ZendeskChatSDK", package: "chat_sdk_ios"),
 						],
 						path: "Plugins/Zendesk")					
     ]
