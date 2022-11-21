@@ -11,27 +11,31 @@ import UIKit
 
 /// When Kustomer has an open or unread conversation, choose what you would like to happen when the user asks for support
 public enum KustomerResumeConversationSetting {
-    ///Even if there is an open or unread message, always launch Forethought
+    /// Default. Even if there is an open or unread message, always launch Forethought
     case alwaysStartNewConversation
-    ///Default. If there's an unread message from an agent, show it. If there's an open conversation, prompt them
+    /// If there's an unread message from an agent, show it. If there's an open conversation, prompt them
     case showForUnreadMessagePromptForOpen
-    ///If there's an open conversation, show Kustomer
+    /// If there's an open conversation, show Kustomer
     case showForOpenConversation
-    ///If there's an unread or an open conversation, prompt the user to select
+    /// If there's an unread or an open conversation, prompt the user to select
     case promptIfOpenOrUnread
 }
 
+/// A plugin for connecting Forethought Solve with Kustomer.io
 public class KustomerPlugin: ForethoughtPlugin {
-    weak var forethoughtVC: UIViewController?
     /// Choose the initial question you would like to present when loading Kustomer (this comes from the agent)
     /// NOTE: This will only be used if we don't already have the conversation from Forethought to hand off to the user
     public var initialQuestion: String? = "Hello, how can I help you today?"
+    
     /// When Kustomer has an open or unread conversation, choose what you would like to happen when the user asks for support.
-    /// Default is .showForUnreadMessagePromptForOpen
-    public var resumeConversation: KustomerResumeConversationSetting = .showForUnreadMessagePromptForOpen
+    /// Default is .alwaysStartNewConversation
+    public var resumeConversation: KustomerResumeConversationSetting = .alwaysStartNewConversation
     
     /// The integration name that connects Kustomer to Forethought. This should not be altered.
     public var pluginName = "kustomer"
+    
+    /// A link to the Forethought View Controller, if needed to send messages back to Forethought
+    weak var forethoughtVC: UIViewController?
     
     /// The number of open conversations available to the user via Kustomer. Fetched at launch
     var openConversationCount: Int = 0
@@ -122,6 +126,7 @@ public class KustomerPlugin: ForethoughtPlugin {
                     if let id = item.conversation.id {
                         ForethoughtSDK.hide(animated: false) {
                             Kustomer.openConversation(id: id, animated: true, completion: nil)
+                            ForethoughtSDK.sendHandoffResponse(success: true)
                         }
                     } else {
                         self.fallbackStartConversation()
@@ -139,16 +144,6 @@ public class KustomerPlugin: ForethoughtPlugin {
     /// If creating a new conversation and setting the initial question fails in someway, show via the traditional method
     func fallbackStartConversation() {
         ForethoughtSDK.hide(animated: false) {
-//            var initialMessages: [String] = []
-//            if let initialQuestion = self.initialQuestion {
-//                initialMessages.append(initialQuestion)
-//            }
-//
-//            Kustomer.openNewConversation(initialMessages: initialMessages, afterCreateConversation: { conversation in
-//                //This isn't called until the user manually sends the first message
-//                print("Conversation Created: \(conversation)")
-//            }, animated: false)
-            
             var message: KUSInitialMessage? = nil
             if let initialQuestion = self.initialQuestion {
                 message = KUSInitialMessage(body: initialQuestion, direction: .user)
@@ -156,6 +151,7 @@ public class KustomerPlugin: ForethoughtPlugin {
             
             KustomerClient.shared.startNewConversation(initialMessage: message, afterCreateConversation: { conversation in
                 print("Conversation Created: \(conversation)")
+                ForethoughtSDK.sendHandoffResponse(success: true)
             }, animated: false)
         }
     }
@@ -187,6 +183,7 @@ public class KustomerPlugin: ForethoughtPlugin {
         } else {
             Kustomer.show(preferredView: .chatHistory)
         }
+        ForethoughtSDK.sendHandoffResponse(success: true)
     }
 
 }

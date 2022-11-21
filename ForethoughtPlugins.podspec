@@ -1,4 +1,4 @@
-$FORETHOUGHT_VERSION = "0.3.0"
+$FORETHOUGHT_VERSION = "1.0.0"
 
 Pod::Spec.new do |spec|
 
@@ -18,19 +18,21 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/Forethought-Technologies/solve-ios.git", :tag => $FORETHOUGHT_VERSION }
 
-  # spec.framework  = "SomeFramework"
-  # spec.frameworks = "SomeFramework", "AnotherFramework"
-
   spec.dependency "Forethought", $FORETHOUGHT_VERSION
   
   spec.subspec "ZendeskPlugin" do |ss|
   	ss.source_files = "Plugins/Zendesk/*.swift"
-		ss.dependency 'ZendeskChatSDK', '~> 2.11'
+		ss.dependency 'ZendeskChatSDK', '~> 3.0'
   end
 	
   spec.subspec "KustomerPlugin" do |ss|
   	ss.source_files = "Plugins/Kustomer/*.swift"
-		ss.dependency 'KustomerChat', '~> 2.5'
+		ss.dependency 'KustomerChat', '~> 2.7'
+  end
+  
+  spec.subspec "IntercomPlugin" do |ss|
+  	ss.source_files = "Plugins/Intercom/*.swift"
+		ss.dependency 'Intercom', '~> 14.0'
   end
 
 end

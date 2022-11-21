@@ -11,23 +11,36 @@ import Forethought
 import MessagingSDK
 import UIKit
 
+/// A plugin for connecting Forethought Solve with Zendesk
 public class ZendeskPlugin: ForethoughtPlugin {
+    /// The integration name that connects Zendesk to Forethought. This should not be altered.
     public var pluginName = "zendesk"
     
+    /// A link to the Forethought View Controller, if needed to send messages back to Forethought
     weak var forethoughtVC: UIViewController?
     
+    
+    /// Configures the Zendesk SDK and attaches it directly to Forethought
+    ///
+    ///  - Parameters:
+    ///    - accountKey: Your Zendesk account key
+    ///    - appId: Your Zendesk Application ID
     public init(accountKey: String, appId: String) {
         Chat.initialize(accountKey: accountKey, appId: appId)
     }
     
+    /// Required for the ForethoughtPlugin Protocol. Chooses to show the Zendesk Plugin instead of Forethought. Defaults to false
     public func showPluginOnLaunch() -> Bool {
         return false
     }
     
+    /// Required for the ForethoughtPlugin Protocol. Sets the Viewcontroller for Forethought
     public func forethoughtViewLoaded(viewController: UIViewController) {
         self.forethoughtVC = viewController
     }
     
+    /// Required for the ForethoughtPlugin Protocol. Informs the plugin that Forethought would like to handoff to Zendesk.
+    /// Manages passing in the Forethought handoff data, dismissing Forethought, and showing presenting the Zendesk screen
     public func forethoughtHandoffRequested(handoffData: ForethoughtHandoffData) {
         do {
             // Configure Zendesk Widget
@@ -73,6 +86,8 @@ public class ZendeskPlugin: ForethoughtPlugin {
         }
     }
     
+    /// Presents the Zendesk screen modally instead of via a Navigation controller.
+    /// This is used based on if the Forethought screen was shown via Navigation, or Modally.
     func presentModally(viewController: UIViewController) {
         if #available(iOS 13, *) {
             let window = UIApplication.shared.connectedScenes.flatMap { ($0 as? UIWindowScene)?.windows ?? [] }
@@ -87,5 +102,4 @@ public class ZendeskPlugin: ForethoughtPlugin {
             }
         }
     }
-
 }

@@ -25,6 +25,9 @@ Installing with Swift Package Manager will follow the same steps as installing t
 
    #For Kustomer
    pod 'ForethoughtPlugins/KustomerPlugin'
+   
+   #For Intercom
+   pod 'ForethoughtPlugins/IntercomPlugin'
 
    ```
 1. Run the following command:
@@ -40,15 +43,28 @@ Zendesk:
 
    ```swift
 	 let plugin = ZendeskPlugin(accountKey: "ZENDESK_KEY", appId: "ZENDESK_ID")
-	 ForethoughtSDK.start(apiKey: "__YOUR_KEY_HERE__", plugins: [plugin])
+	 ForethoughtSDK.start(apiKey: "FORETHOUGHT_KEY", plugins: [plugin])
    ```
 
 Kustomer:
 
    ```swift
 	 let plugin = KustomerPlugin(apiKey: "__KUSTOMER_API_KEY__", options: nil)
-	 ForethoughtSDK.start(apiKey: "__YOUR_KEY_HERE__", plugins: [plugin])
+   plugin.loginToIntercom(userId: "Optional User ID goes here") // this can be done anytime before Intercom is used
+	 ForethoughtSDK.start(apiKey: "FORETHOUGHT_KEY", plugins: [plugin])
    ```
 
+Intercom:
 
-And that's it! To further customize, feel free to check out the source code in the plugins/ directory. Each plugin has options for further customization.
+   ```swift
+	 let plugin = IntercomPlugin(accountKey: "INTERCOM_ACCOUNT_KEY", appId: "INTERCOM_APP_ID")
+	 ForethoughtSDK.start(apiKey: "FORETHOUGHT_KEY", plugins: [plugin])
+   ```
+NOTE: In order to use Intercom, they require a user login.
+Please use either the Intercom.loginUser(with: ICMUserAttributes) or Intercom.loginUnidentifiedUser method before calling Forethought.show() method
+
+
+And that's it! To further customize, feel free to check out the source code in the plugins/ directory. Each plugin has options for further customization. 
+
+### Notes
+You can also customize other parts of the SDK by referring to the documentation of the source SDK. For example, using the Intercom SDK, you can still use Identity Verification, or Push notifications by accessing the SDK directly.
