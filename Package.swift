@@ -15,6 +15,12 @@ let package = Package(
 				.library(
 						name: "KustomerPlugin",
 						targets: ["KustomerPlugin"]),
+				.library(
+						name: "ZendeskPlugin",
+						targets: ["ZendeskPlugin"]),
+				.library(
+						name: "IntercomPlugin",
+						targets: ["IntercomPlugin"]),
     ],
     dependencies: [
         .package(url: "https://github.com/kustomer/kustomer-ios", from: "2.7.4"),
@@ -43,8 +49,8 @@ let package = Package(
                 name: "IntercomPlugin",
                 dependencies:[
                     .target(name: "Forethought"),
-                    .product(name: "Intercom", package: "Intercom"),
+                    .product(name: "Intercom", package: "intercom-ios"),
                 ],
-                path: "Plugins/Zendesk")
+                path: "Plugins/Intercom")
     ]
 )
