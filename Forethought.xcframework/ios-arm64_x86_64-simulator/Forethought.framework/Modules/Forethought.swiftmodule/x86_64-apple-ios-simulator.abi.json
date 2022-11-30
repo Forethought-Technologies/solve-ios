@@ -2066,6 +2066,59 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "Helpers",
+        "printedName": "Helpers",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "versionNumberString",
+            "printedName": "versionNumberString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Forethought7HelpersC19versionNumberStringSSyFZ",
+            "mangledName": "$s11Forethought7HelpersC19versionNumberStringSSyFZ",
+            "moduleName": "Forethought",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Helpers",
+                "printedName": "Forethought.Helpers",
+                "usr": "s:11Forethought7HelpersC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11Forethought7HelpersCACycfc",
+            "mangledName": "$s11Forethought7HelpersCACycfc",
+            "moduleName": "Forethought",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11Forethought7HelpersC",
+        "mangledName": "$s11Forethought7HelpersC",
+        "moduleName": "Forethought",
+        "isOpen": true
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -2094,6 +2147,58 @@
         "name": "ForethoughtSDK",
         "printedName": "ForethoughtSDK",
         "children": [
+          {
+            "kind": "Var",
+            "name": "sdkVersion",
+            "printedName": "sdkVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A3SDKC10sdkVersionSSvpZ",
+            "mangledName": "$s11Forethought0A3SDKC10sdkVersionSSvpZ",
+            "moduleName": "Forethought",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A3SDKC10sdkVersionSSvgZ",
+                "mangledName": "$s11Forethought0A3SDKC10sdkVersionSSvgZ",
+                "moduleName": "Forethought",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Var",
             "name": "dataParameters",
@@ -3926,36 +4031,43 @@
     },
     {
       "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 414,
+      "length": 7,
+      "value": "\"1.0.1\""
+    },
+    {
+      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Array",
-      "offset": 1824,
+      "offset": 1903,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "StringLiteral",
-      "offset": 4915,
+      "offset": 5002,
       "length": 19,
       "value": "\"__YOUR_KEY_HERE__\""
     },
     {
       "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Dictionary",
-      "offset": 4983,
+      "offset": 5070,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Dictionary",
-      "offset": 5032,
+      "offset": 5119,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Array",
-      "offset": 5080,
+      "offset": 5167,
       "length": 2,
       "value": "[]"
     }

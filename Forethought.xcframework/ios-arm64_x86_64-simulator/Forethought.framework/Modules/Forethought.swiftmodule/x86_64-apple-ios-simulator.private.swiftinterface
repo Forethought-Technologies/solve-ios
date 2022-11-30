@@ -33,6 +33,7 @@ extension Forethought.ForethoughtPlugin {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class ForethoughtSDK : ObjectiveC.NSObject {
+  public static let sdkVersion: Swift.String
   @objc public static var dataParameters: [Swift.String : Swift.String] {
     @objc get
     @objc set(newValue)

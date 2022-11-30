@@ -66,16 +66,18 @@ public class ZendeskPlugin: ForethoughtPlugin {
             let viewController = try Messaging.instance.buildUI(engines: [chatEngine], configs: [messagingConfiguration, chatConfiguration])
 //            self.navigationController?.pushViewController(viewController, animated: true)
             
-            //are we in a navigation controller?
+            // Are we in a navigation controller?
             if let navigationController = self.forethoughtVC?.navigationController {
-                //show through navigation
-                ForethoughtSDK.hide(animated: true) {
-                    navigationController.pushViewController(viewController, animated: true)
+                //show through navigation. Since there's a navigate back, and then forward, it's better without animation
+                ForethoughtSDK.hide(animated: false) {
+                    navigationController.pushViewController(viewController, animated: false)
                 }
             } else {
-                //present on the window
+                //Zendesk needs to be inside of a NavigationController. If we don't have one, let's create it
+                let navigationController = self.setupNavigationController(rootViewController: viewController)
                 ForethoughtSDK.hide(animated: true) {
-                    self.presentModally(viewController: viewController)
+                    //present on the window
+                    self.presentModally(viewController: navigationController)
                 }
             }
             ForethoughtSDK.sendHandoffResponse(success: true)
@@ -86,20 +88,40 @@ public class ZendeskPlugin: ForethoughtPlugin {
         }
     }
     
+    // Zendesk needs to be inside of a NavigationController. If we don't have one, let's create it
+    // We should also add a done button so they can exit the flow
+    private func setupNavigationController(rootViewController: UIViewController) -> UINavigationController {
+        let navigationController = UINavigationController(rootViewController: rootViewController)
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(ZendeskPlugin.closeModal))
+        rootViewController.navigationItem.leftBarButtonItem = doneButton
+        return navigationController
+    }
+    
     /// Presents the Zendesk screen modally instead of via a Navigation controller.
     /// This is used based on if the Forethought screen was shown via Navigation, or Modally.
-    func presentModally(viewController: UIViewController) {
+    private func presentModally(viewController: UIViewController) {
+        if let rootVC = self.getRootViewController() {
+            rootVC.present(viewController, animated: true, completion: nil)
+        }
+    }
+    
+    // Closes the modal
+    @objc private func closeModal() {
+        if let rootVC = self.getRootViewController() {
+            rootVC.dismiss(animated: true)
+        }
+    }
+    
+    // Gets the Root View Controller of the app to present a modal on top of it
+    private func getRootViewController() -> UIViewController? {
         if #available(iOS 13, *) {
             let window = UIApplication.shared.connectedScenes.flatMap { ($0 as? UIWindowScene)?.windows ?? [] }
                 .first { $0.isKeyWindow }
-            if let rootVC = window?.rootViewController {
-                rootVC.present(viewController, animated: true, completion: nil)
-            }
+            return window?.rootViewController
         } else {
             let window = UIApplication.shared.keyWindow
-            if let rootVC = window?.rootViewController {
-                rootVC.present(viewController, animated: true, completion: nil)
-            }
+            return window?.rootViewController
+
         }
     }
 }
