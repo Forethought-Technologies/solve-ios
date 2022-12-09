@@ -2,12 +2,93 @@
   "object": {
     "pins": [
       {
+        "package": "ZendeskChatProvidersSDK",
+        "repositoryURL": "https://github.com/zendesk/chat_providers_sdk_ios",
+        "state": {
+          "branch": null,
+          "revision": "60db4a62dd2ec0c4cbc213b869c7df199b910ab1",
+          "version": "3.0.0"
+        }
+      },
+      {
+        "package": "ZendeskChatSDK",
+        "repositoryURL": "https://github.com/zendesk/chat_sdk_ios",
+        "state": {
+          "branch": null,
+          "revision": "2ea105042b1dcbf5766426b2c0c6778779949ba1",
+          "version": "3.0.0"
+        }
+      },
+      {
+        "package": "ZendeskCommonUISDK",
+        "repositoryURL": "https://github.com/zendesk/commonui_sdk_ios",
+        "state": {
+          "branch": null,
+          "revision": "d6d40302c628bde17251c24553f18b5b47551b6b",
+          "version": "7.0.0"
+        }
+      },
+      {
+        "package": "Down",
+        "repositoryURL": "https://github.com/kustomer/Down",
+        "state": {
+          "branch": null,
+          "revision": "e754ab1c80920dd51a8e08290c912ac1c2ac8b58",
+          "version": "0.11.0"
+        }
+      },
+      {
+        "package": "Intercom",
+        "repositoryURL": "https://github.com/intercom/intercom-ios",
+        "state": {
+          "branch": null,
+          "revision": "c0115c008e1628912ad8e0a293811a3c1f9b7a66",
+          "version": "14.0.3"
+        }
+      },
+      {
         "package": "kustomer-ios",
         "repositoryURL": "https://github.com/kustomer/kustomer-ios",
         "state": {
           "branch": null,
-          "revision": "5e5d38cdf2dc01222ec9d3e010b56073679ca5a5",
-          "version": "2.5.4"
+          "revision": "61b720559c1454bb585915a6680753f71dce4c64",
+          "version": "2.7.5"
+        }
+      },
+      {
+        "package": "ZendeskMessagingSDK",
+        "repositoryURL": "https://github.com/zendesk/messaging_sdk_ios",
+        "state": {
+          "branch": null,
+          "revision": "97678c795166b6bf8879ed51e3054ffaa033c883",
+          "version": "4.0.0"
+        }
+      },
+      {
+        "package": "ZendeskMessagingAPISDK",
+        "repositoryURL": "https://github.com/zendesk/messagingapi_sdk_ios",
+        "state": {
+          "branch": null,
+          "revision": "503f60e2bfd8bca2b39eb515ef0ac3607bdc4d1d",
+          "version": "4.0.0"
+        }
+      },
+      {
+        "package": "ZendeskSDKConfigurationsSDK",
+        "repositoryURL": "https://github.com/zendesk/sdkconfigurations_sdk_ios",
+        "state": {
+          "branch": null,
+          "revision": "a99da4df16e09b89ca6c4b576ca139a7d04efcf5",
+          "version": "2.0.0"
+        }
+      },
+      {
+        "package": "PubNub",
+        "repositoryURL": "https://github.com/pubnub/swift.git",
+        "state": {
+          "branch": null,
+          "revision": "749fdf14c40eaa53ecb9ffdd7df7c801a7669144",
+          "version": "5.1.0"
         }
       }
     ]
