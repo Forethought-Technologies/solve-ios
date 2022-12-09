@@ -47,7 +47,7 @@ A valid API key in order to use the Forethought Solve SDK. In additon to the doc
 
 ## Optional Additions
 
-### Custom Data and Config Parameters
+### Workflow Context Variables
 
 Pass in Workflow Context Variables that have been defined via the Forethought Dashboard:
     ```swift
@@ -81,28 +81,23 @@ To handoff customers from Forethought to an Agent Chat Provider like Kustomer:
     ```
 
 #### Handoff Example
+
     ```swift
     func startChatRequested(handoffData: ForethoughtHandoffData) {
-      print("Chat Requested: \(handoffData)")
-      
-      // close forethought widget
-      ForethoughtSDK.hide(animated: false)
-      
-      // start a Kustomer chat
-      Kustomer.startNewConversation(
-        initialMessage: KUSInitialMessage(body: handoffData.question, direction: .user),
-        afterCreateConversation: { conversation in
-          print("New conversation created. Conversation id is \(conversation.id)")                          
-        }, 
-        animated: true
-     )
-     
-     // if handoff was successful
-     ForethoughtSDK.sendHandoffResponse(success: true)
-     
-     // if handoff was unsuccessful
-     ForethoughtSDK.show()
-     ForethoughtSDK.sendHandoffResponse(success: false)
+        print("Chat Requested: \(handoffData)")
+
+        // close forethought widget
+        ForethoughtSDK.hide(animated: false)
+
+        // start a Kustomer chat
+        Kustomer.startNewConversation(initialMessage: KUSInitialMessage(body: handoffData.question, direction: .user))
+
+        // if handoff was successful
+        ForethoughtSDK.sendHandoffResponse(success: true)
+
+        // if handoff was unsuccessful
+        ForethoughtSDK.show()
+        ForethoughtSDK.sendHandoffResponse(success: false)
     }
     ```
     
