@@ -2,7 +2,7 @@
 
 This repository contains the framework and instructions for the Forethought iOS SDK.
 
-A valid API key in order to use the Forethought Solve SDK. In additon to the documentation below, sample apps have been written in Objective-C & Swift, as well as a SwiftUI implementation
+A valid API key is needed in order to use the Forethought Solve SDK. In additon to the documentation below, sample apps have been written in Objective-C & Swift, as well as a SwiftUI implementation
 
 <p align="center">
 	<img src="https://github.com/Forethought-Technologies/solve-ios/blob/main/demo.gif" width="296" height="640">
@@ -16,7 +16,7 @@ A valid API key in order to use the Forethought Solve SDK. In additon to the doc
 
 1. Enter the Forethought iOS GitHub repo URL (`https://github.com/Forethought-Technologies/solve-ios`)
 
-1. Tap Add Package. Follow the remaining prompts and Xcode will automatically download the framework
+1. Tap **Add Package**. Follow the remaining prompts and Xcode will automatically download the framework
 
 ### Cocoapods
 
@@ -30,9 +30,9 @@ A valid API key in order to use the Forethought Solve SDK. In additon to the doc
    ```
    $ pod install
    ```
-1. Make sure to use the `.xcworkspace` file and *NOT* the `.xcodeproj` from now on.
-   
-## Usage
+1. Make sure to use the `.xcworkspace` file and **NOT** the `.xcodeproj` from now on.
+
+## Basic Usage
 
 1. In `AppDelegate.swift` file, replace `__YOUR_KEY_HERE__` with a valid Forethought API key:
     ```swift
@@ -41,7 +41,7 @@ A valid API key in order to use the Forethought Solve SDK. In additon to the doc
 1. Open the Forethought widget:
     ```swift
     import 'Forethought'
-     
+
     ForethoughtSDK.show()
     ```
 
@@ -50,10 +50,11 @@ A valid API key in order to use the Forethought Solve SDK. In additon to the doc
 ### Workflow Context Variables
 
 Pass in Workflow Context Variables that have been defined via the Forethought Dashboard:
+
     ```swift
     ForethoughtSDK.dataParameters = ["language":"EN", "user-email": "test@ft.ai", "workflow-context-variable": "value"]
     ```
- 
+
 ### Handoff Methods
 
 To handoff customers from Forethought to an Agent Chat Provider like Kustomer:
@@ -100,7 +101,7 @@ To handoff customers from Forethought to an Agent Chat Provider like Kustomer:
         ForethoughtSDK.sendHandoffResponse(success: false)
     }
     ```
-    
+
 ### Use of a Navigation Controller Directly
 
 Attach the Forethought SDK directly onto a navigation stack:
