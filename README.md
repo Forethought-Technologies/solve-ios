@@ -51,9 +51,9 @@ A valid API key is needed in order to use the Forethought Solve SDK. In additon 
 
 Pass in Workflow Context Variables that have been defined via the Forethought Dashboard:
 
-    ```swift
-    ForethoughtSDK.dataParameters = ["language":"EN", "user-email": "test@ft.ai", "workflow-context-variable": "value"]
-    ```
+```swift
+ForethoughtSDK.dataParameters = ["language":"EN", "user-email": "test@ft.ai", "workflow-context-variable": "value"]
+```
 
 ### Handoff Methods
 
@@ -83,24 +83,24 @@ To handoff customers from Forethought to an Agent Chat Provider like Kustomer:
 
 #### Handoff Example
 
-    ```swift
-    func startChatRequested(handoffData: ForethoughtHandoffData) {
-        print("Chat Requested: \(handoffData)")
+```swift
+func startChatRequested(handoffData: ForethoughtHandoffData) {
+    print("Chat Requested: \(handoffData)")
 
-        // close forethought widget
-        ForethoughtSDK.hide(animated: false)
+    // close forethought widget
+    ForethoughtSDK.hide(animated: false)
 
-        // start a Kustomer chat
-        Kustomer.startNewConversation(initialMessage: KUSInitialMessage(body: handoffData.question, direction: .user))
+    // start a Kustomer chat
+    Kustomer.startNewConversation(initialMessage: KUSInitialMessage(body: handoffData.question, direction: .user))
 
-        // if handoff was successful
-        ForethoughtSDK.sendHandoffResponse(success: true)
+    // if handoff was successful
+    ForethoughtSDK.sendHandoffResponse(success: true)
 
-        // if handoff was unsuccessful
-        ForethoughtSDK.show()
-        ForethoughtSDK.sendHandoffResponse(success: false)
-    }
-    ```
+    // if handoff was unsuccessful
+    ForethoughtSDK.show()
+    ForethoughtSDK.sendHandoffResponse(success: false)
+}
+```
 
 ### Use of a Navigation Controller Directly
 
