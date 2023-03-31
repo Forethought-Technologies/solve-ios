@@ -1,4 +1,4 @@
-$FORETHOUGHT_VERSION = "1.0.1"
+$FORETHOUGHT_VERSION = "1.0.2"
 
 Pod::Spec.new do |spec|
 
@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "Forethought Engineering" => "eng@forethought.ai" }
   spec.social_media_url   = "https://twitter.com/forethought_ai"
 
-  spec.platform     	= :ios, "11.0"
+  spec.platform     	= :ios, "13.0"
 	spec.swift_version 	= '5.0'
 
   spec.source       = { :git => "https://github.com/Forethought-Technologies/solve-ios.git", :tag => $FORETHOUGHT_VERSION }

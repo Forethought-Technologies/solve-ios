@@ -708,6 +708,27 @@
           },
           {
             "kind": "Function",
+            "name": "startLoadingWebView",
+            "printedName": "startLoadingWebView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Forethought0A14ViewControllerC015startLoadingWebB0yyF",
+            "mangledName": "$s11Forethought0A14ViewControllerC015startLoadingWebB0yyF",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setupLoadingIndicator",
             "printedName": "setupLoadingIndicator()",
             "children": [
@@ -3960,112 +3981,112 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
       "offset": 160,
       "length": 38,
       "value": "\"https:\/\/solve-widget.forethought.ai\/\""
     },
     {
-      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "Array",
       "offset": 447,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
       "offset": 475,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
       "offset": 500,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
       "offset": 964,
       "length": 26,
       "value": "\"&config-ft-hide-nav=true\""
     },
     {
-      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
       "offset": 998,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
       "offset": 1063,
       "length": 26,
       "value": "\"&config-ft-hide-nav=true\""
     },
     {
-      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 882,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
       "offset": 274,
       "length": 25,
       "value": "\"Forethought.ForethoughtViewController\""
     },
     {
-      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtHandoffData.swift",
+      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtHandoffData.swift",
       "kind": "StringLiteral",
       "offset": 579,
       "length": 22,
       "value": "\"Forethought.ForethoughtHandoffData\""
     },
     {
-      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "StringLiteral",
       "offset": 414,
       "length": 7,
       "value": "\"1.0.1\""
     },
     {
-      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Array",
       "offset": 1903,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "StringLiteral",
       "offset": 5002,
       "length": 19,
       "value": "\"__YOUR_KEY_HERE__\""
     },
     {
-      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Dictionary",
       "offset": 5070,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Dictionary",
       "offset": 5119,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/mknippen\/git\/Forethought\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Array",
       "offset": 5167,
       "length": 2,
