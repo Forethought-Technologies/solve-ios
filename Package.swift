@@ -24,7 +24,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/kustomer/kustomer-ios", from: "2.7.4"),
-        .package(url: "https://github.com/zendesk/chat_sdk_ios", from: "3.0.0"),
+        .package(url: "https://github.com/zendesk/chat_sdk_ios", from: "4.0.0"),
         .package(url: "https://github.com/intercom/intercom-ios", from: "14.0.1"),
     ],
     targets: [

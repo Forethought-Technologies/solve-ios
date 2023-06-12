@@ -1,4 +1,4 @@
-$FORETHOUGHT_VERSION = "1.0.2"
+$FORETHOUGHT_VERSION = "1.0.3"
 
 Pod::Spec.new do |spec|
 
