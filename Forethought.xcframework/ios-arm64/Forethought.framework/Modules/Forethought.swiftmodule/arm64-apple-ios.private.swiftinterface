@@ -9,17 +9,6 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
-@objc public protocol ForethoughtPlugin {
-  @objc var pluginName: Swift.String { get }
-  @objc optional func showPluginOnLaunch() -> Swift.Bool
-  @objc optional func forethoughtViewLoaded(viewController: UIKit.UIViewController)
-  @objc optional func forethoughtViewDidAppear()
-  @objc func forethoughtHandoffRequested(handoffData: Forethought.ForethoughtHandoffData)
-  @objc optional func forethoughtViewClosed()
-}
-extension Forethought.ForethoughtPlugin {
-  public func showPluginOnLaunch() -> Swift.Bool
-}
 @objc public protocol ForethoughtDelegate {
   @objc func startChatRequested(handoffData: Forethought.ForethoughtHandoffData)
 }
@@ -46,10 +35,7 @@ extension Forethought.ForethoughtPlugin {
     @objc get
     @objc set(newValue)
   }
-  @objc public static var plugins: [Forethought.ForethoughtPlugin] {
-    @objc get
-  }
-  @objc public class func start(apiKey: Swift.String, plugins: [Forethought.ForethoughtPlugin] = [])
+  @objc public class func start(apiKey: Swift.String)
   @objc public class func show()
   @objc public class func show(fromNavigationController navigationController: UIKit.UINavigationController? = nil)
   @objc public class func hide(animated: Swift.Bool, completion: @escaping () -> Swift.Void)

@@ -113,7 +113,7 @@ Attach the Forethought SDK directly onto a navigation stack:
 
 ### Plugins
 
-To use Forethought built plugins for Agent Chat Providers, please check out our [plugin documentation](Plugins/Plugins.md).
+**⛔️ Plugins are deprecated in starting in version 2.0.0 ⛔️**
 
 ## Documentation
 

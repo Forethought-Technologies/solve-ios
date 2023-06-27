@@ -16,7 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [ForethoughtSDK startWithApiKey:@"__YOUR_KEY_HERE__" plugins:@[]];
+    [ForethoughtSDK startWithApiKey:@"__YOUR_KEY_HERE__"];
     ForethoughtSDK.dataParameters = @{@"language": @"EN", @"tracking-email":@"test@ft.ai"};
     return YES;
 }
