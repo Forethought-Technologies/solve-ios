@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Forethought
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CloudKit
@@ -9,6 +9,7 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc public protocol ForethoughtDelegate {
   @objc func startChatRequested(handoffData: Forethought.ForethoughtHandoffData)
 }
@@ -31,7 +32,7 @@ import _StringProcessing
     @objc get
     @objc set(newValue)
   }
-  @objc public static var delegate: Forethought.ForethoughtDelegate? {
+  @objc public static var delegate: (any Forethought.ForethoughtDelegate)? {
     @objc get
     @objc set(newValue)
   }

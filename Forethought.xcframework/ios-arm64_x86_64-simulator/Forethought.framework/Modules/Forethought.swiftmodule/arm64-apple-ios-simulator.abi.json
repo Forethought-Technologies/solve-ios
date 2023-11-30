@@ -1043,6 +1043,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -3401,6 +3408,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -3413,91 +3427,630 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
       "offset": 160,
       "length": 38,
       "value": "\"https:\/\/solve-widget.forethought.ai\/\""
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
       "offset": 433,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
       "offset": 458,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
       "offset": 922,
       "length": 26,
       "value": "\"&config-ft-hide-nav=true\""
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
       "offset": 956,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
       "offset": 1021,
       "length": 26,
       "value": "\"&config-ft-hide-nav=true\""
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 840,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1236,
+      "length": 19,
+      "value": "\"__YOUR_KEY_HERE__\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1286,
+      "length": 37,
+      "value": "\"Please add your Forethought API Key\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1439,
+      "length": 80,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1451,
+      "length": 1,
+      "value": "\"?data-api-key=\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1475,
+      "length": 1,
+      "value": "\"&full-screen=true&config-ft-mobile-sdk=true\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1664,
+      "length": 13,
+      "value": "\"&theme=dark\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1851,
+      "length": 28,
+      "value": "\"&config-ft-\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1869,
+      "length": 1,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1878,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2092,
+      "length": 26,
+      "value": "\"&data-ft-\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2108,
+      "length": 1,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2117,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2219,
+      "length": 23,
+      "value": "\"Customer Support Team\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2310,
+      "length": 39,
+      "value": "\"init(coder:) has not been implemented\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2518,
+      "length": 18,
+      "value": "\"widgetObservable\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2825,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2965,
+      "length": 34,
+      "value": "\"Load View: \""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2998,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3807,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3824,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3861,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4188,
+      "length": 3,
+      "value": "\"+\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4540,
+      "length": 14,
+      "value": "\"solve-origin\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4600,
+      "length": 5,
+      "value": "\"iOS\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4627,
+      "length": 16,
+      "value": "\"solve-platform\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4726,
+      "length": 18,
+      "value": "\"solve-os-version\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4822,
+      "length": 19,
+      "value": "\"solve-sdk-version\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 4923,
+      "length": 19,
+      "value": "\"solve-app-version\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 5196,
+      "length": 53,
+      "value": "\"Invalid URL for Forethought. Please contact support\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5406,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5448,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5832,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 6947,
+      "length": 44,
+      "value": "\"var meta = document.createElement('meta');\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7006,
+      "length": 25,
+      "value": "\"meta.name = 'viewport';\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7046,
+      "length": 94,
+      "value": "\"meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7155,
+      "length": 54,
+      "value": "\"var head = document.getElementsByTagName('head')[0];\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7224,
+      "length": 25,
+      "value": "\"head.appendChild(meta);\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7350,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 7783,
+      "length": 135,
+      "value": "\"window.open = function(open) { return function (url, name, features) { window.location.href = url; return window; }; } (window.open);\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8012,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "Dictionary",
+      "offset": 8236,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8450,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8663,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
       "offset": 274,
       "length": 25,
       "value": "\"Forethought.ForethoughtViewController\""
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtHandoffData.swift",
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "Array",
+      "offset": 9136,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 9353,
+      "length": 25,
+      "value": "\"forethoughtWidgetClosed\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 9435,
+      "length": 37,
+      "value": "\"forethoughtWidgetIntegrationHandoff\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9833,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9891,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 10017,
+      "length": 6,
+      "value": "\"true\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 10026,
+      "length": 7,
+      "value": "\"false\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 10052,
+      "length": 85,
+      "value": "\"window.postMessage({event: 'handoffStatus', hideWidget: false, success: \""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 10134,
+      "length": 1,
+      "value": "\"})\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 10219,
+      "length": 76,
+      "value": "\"result: \""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 10257,
+      "length": 1,
+      "value": "\", error: \""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 10294,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtHandoffData.swift",
+      "kind": "StringLiteral",
+      "offset": 1166,
+      "length": 7,
+      "value": "\"event\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtHandoffData.swift",
+      "kind": "StringLiteral",
+      "offset": 1311,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtHandoffData.swift",
+      "kind": "StringLiteral",
+      "offset": 1339,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtHandoffData.swift",
+      "kind": "StringLiteral",
+      "offset": 1471,
+      "length": 7,
+      "value": "\"email\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtHandoffData.swift",
+      "kind": "StringLiteral",
+      "offset": 1501,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtHandoffData.swift",
+      "kind": "StringLiteral",
+      "offset": 1639,
+      "length": 10,
+      "value": "\"question\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtHandoffData.swift",
+      "kind": "StringLiteral",
+      "offset": 1675,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtHandoffData.swift",
+      "kind": "StringLiteral",
+      "offset": 1825,
+      "length": 13,
+      "value": "\"integration\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtHandoffData.swift",
+      "kind": "StringLiteral",
+      "offset": 1867,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtHandoffData.swift",
+      "kind": "StringLiteral",
+      "offset": 2025,
+      "length": 12,
+      "value": "\"department\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtHandoffData.swift",
+      "kind": "StringLiteral",
+      "offset": 2065,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtHandoffData.swift",
+      "kind": "StringLiteral",
+      "offset": 2230,
+      "length": 22,
+      "value": "\"additionalParameters\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtHandoffData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2302,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtHandoffData.swift",
       "kind": "StringLiteral",
       "offset": 485,
       "length": 22,
       "value": "\"Forethought.ForethoughtHandoffData\""
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/Helpers.swift",
+      "kind": "StringLiteral",
+      "offset": 1101,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/Helpers.swift",
+      "kind": "StringLiteral",
+      "offset": 1206,
+      "length": 17,
+      "value": "\"CFBundleVersion\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/Helpers.swift",
+      "kind": "StringLiteral",
+      "offset": 1251,
+      "length": 29,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/Helpers.swift",
+      "kind": "StringLiteral",
+      "offset": 1265,
+      "length": 1,
+      "value": "\" (\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/Helpers.swift",
+      "kind": "StringLiteral",
+      "offset": 1278,
+      "length": 1,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "StringLiteral",
       "offset": 414,
       "length": 7,
       "value": "\"1.0.1\""
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1666,
+      "length": 19,
+      "value": "\"__YOUR_KEY_HERE__\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1711,
+      "length": 31,
+      "value": "\"Please supply a valid API key\""
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2856,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3048,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "StringLiteral",
       "offset": 4390,
       "length": 19,
       "value": "\"__YOUR_KEY_HERE__\""
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Dictionary",
       "offset": 4458,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "filePath": "\/Users\/evgenyorekhov\/Downloads\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Dictionary",
       "offset": 4507,
       "length": 3,
