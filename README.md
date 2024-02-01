@@ -49,10 +49,18 @@ A valid API key is needed in order to use the Forethought Solve SDK. In additon 
 
 ### Workflow Context Variables
 
-Pass in Workflow Context Variables that have been defined via the Forethought Dashboard:
+Pass in Workflow Context Variables that have been defined via the Forethought Dashboard. (Note: you do not need to prefix with `data-ft`)
 
 ```swift
 ForethoughtSDK.dataParameters = ["language":"EN", "user-email": "test@ft.ai", "workflow-context-variable": "value"]
+```
+
+### Widget Configuration Parameters
+
+Current [configuration parameters](https://support.forethought.ai/hc/en-us/articles/1500002917301-Installation-Guide-for-Solve-Widget#:~:text=Additional%20Attributes) are all the `config-ft` prefixed parameters under Additional Attributes. (Note: you do not need to prefix with `config-ft`)
+
+```swift
+ForethoughtSDK.configParameters = ["theme-color": "#7b33fb"]
 ```
 
 ### Handoff Methods
