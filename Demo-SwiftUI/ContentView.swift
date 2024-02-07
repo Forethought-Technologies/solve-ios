@@ -10,14 +10,14 @@ import Forethought
 
 struct ContentView: View {
     @State var isForethoughtPresented = false
-    
+
     var body: some View {
         VStack(spacing: 50) {
             Image("forethoughtLogo")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 220)
-            
+
             Button {
                 ForethoughtSDK.show()
             } label: {
@@ -35,9 +35,9 @@ struct ContentView: View {
                 .padding(.horizontal, 100)
 
         }
-        
-
-        
+        .sheet(isPresented: $isForethoughtPresented) {
+            ForethoughtSDK.forethoughtView
+        }
     }
 }
 

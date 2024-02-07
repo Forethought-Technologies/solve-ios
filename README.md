@@ -45,6 +45,24 @@ A valid API key is needed in order to use the Forethought Solve SDK. In additon 
     ForethoughtSDK.show()
     ```
 
+## Other ways to open
+
+### SwiftUI View
+
+Returns a SwiftUI view
+```swift
+ForethoughtSDK.forethoughtView
+```
+
+### Use of a Navigation Controller Directly
+
+Attach the Forethought SDK directly onto a navigation stack:
+   ```swift
+   @IBAction func contactSupportTapped() {
+       ForethoughtSDK.show(fromNavigationController: self.navigationController)
+   }
+   ```
+
 ## Optional Additions
 
 ### Workflow Context Variables
@@ -109,15 +127,6 @@ func startChatRequested(handoffData: ForethoughtHandoffData) {
     ForethoughtSDK.sendHandoffResponse(success: false)
 }
 ```
-
-### Use of a Navigation Controller Directly
-
-Attach the Forethought SDK directly onto a navigation stack:
-   ```swift
-   @IBAction func contactSupportTapped() {
-       ForethoughtSDK.show(fromNavigationController: self.navigationController)
-   }
-   ```
 
 ### Plugins
 
