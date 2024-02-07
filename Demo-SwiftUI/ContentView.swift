@@ -19,7 +19,7 @@ struct ContentView: View {
                 .frame(height: 220)
 
             Button {
-                ForethoughtSDK.show()
+                isForethoughtPresented = true
             } label: {
                 ZStack {
                     Image("button")
