@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
     spec.name               = "Forethought"
-    spec.version            = "2.0.2"
+    spec.version            = "2.1.0"
     spec.summary            = "Transform customer service with human-centered AI"
     spec.description        = "Transform customer service with human-centered AI using the Forethought Solve AI Chatbot"
     spec.homepage           = "https://forethought.ai"
@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
     spec.platform           = :ios, "11.0"
     spec.swift_version      = '5.0'
     spec.source             = { :git => "https://github.com/Forethought-Technologies/solve-ios.git", :tag => "#{spec.version}" }
-    
+
     spec.vendored_frameworks = "Forethought.xcframework"
 
 end

@@ -1,15 +1,30 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Forethought
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CloudKit
 import Foundation
 import Swift
+import SwiftUI
 import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
-import _SwiftConcurrencyShims
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ForethoughtViewController : UIKit.UIViewController, UIKit.UIScrollViewDelegate, WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func loadView()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @objc deinit
+}
+extension Forethought.ForethoughtViewController : WebKit.WKScriptMessageHandler {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+  @_Concurrency.MainActor(unsafe) public func endCurrentChat()
+  @_Concurrency.MainActor(unsafe) public func sendHandoffStatus(success: Swift.Bool)
+}
 @objc public protocol ForethoughtDelegate {
   @objc func startChatRequested(handoffData: Forethought.ForethoughtHandoffData)
 }
@@ -22,6 +37,21 @@ import _SwiftConcurrencyShims
   final public let additionalParameters: [Swift.String : Any]?
   @objc deinit
 }
+@available(iOS 13.0, *)
+public struct ForethoughtView : SwiftUI.UIViewControllerRepresentable {
+  public typealias UIViewControllerType = Forethought.ForethoughtViewController
+  @_Concurrency.MainActor(unsafe) public func makeUIViewController(context: Forethought.ForethoughtView.Context) -> Forethought.ForethoughtViewController
+  @_Concurrency.MainActor(unsafe) public func updateUIViewController(_ uiViewController: Forethought.ForethoughtViewController, context: Forethought.ForethoughtView.Context)
+  public typealias Body = Swift.Never
+  public typealias Coordinator = Swift.Void
+}
+@available(iOS 13.0, *)
+@_Concurrency.MainActor(unsafe) public struct ForethoughtView_Previews : SwiftUI.PreviewProvider {
+  @_Concurrency.MainActor(unsafe) public static var previews: some SwiftUI.View {
+    get
+  }
+  public typealias Previews = @_opaqueReturnTypeOf("$s11Forethought0A13View_PreviewsV8previewsQrvpZ", 0) __
+}
 @objc @_inheritsConvenienceInitializers public class ForethoughtSDK : ObjectiveC.NSObject {
   public static let sdkVersion: Swift.String
   @objc public static var dataParameters: [Swift.String : Swift.String] {
@@ -32,9 +62,13 @@ import _SwiftConcurrencyShims
     @objc get
     @objc set(newValue)
   }
-  @objc public static var delegate: (any Forethought.ForethoughtDelegate)? {
+  @objc public static var delegate: Forethought.ForethoughtDelegate? {
     @objc get
     @objc set(newValue)
+  }
+  @available(iOS 13.0, *)
+  public static var forethoughtView: Forethought.ForethoughtView {
+    get
   }
   @objc public class func start(apiKey: Swift.String)
   @objc public class func show()
