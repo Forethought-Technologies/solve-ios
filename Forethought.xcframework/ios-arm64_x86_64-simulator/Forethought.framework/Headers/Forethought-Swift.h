@@ -259,7 +259,11 @@ using UInt = size_t;
 /// An optional delegate to handle custom integrations for handoffs
 SWIFT_PROTOCOL("_TtP11Forethought19ForethoughtDelegate_")
 @protocol ForethoughtDelegate
+/// Customer requested a handoff. Implement your own handoff from Forethought to another SDK (e.g. Zendesk or Salesforce)
 - (void)startChatRequestedWithHandoffData:(ForethoughtHandoffData * _Nonnull)handoffData;
+@optional
+/// Customer clicked the close widget button. Make sure to call ForethoughtSDK.hide if you choose to implement this
+- (void)widgetClosed;
 @end
 
 
@@ -622,7 +626,11 @@ using UInt = size_t;
 /// An optional delegate to handle custom integrations for handoffs
 SWIFT_PROTOCOL("_TtP11Forethought19ForethoughtDelegate_")
 @protocol ForethoughtDelegate
+/// Customer requested a handoff. Implement your own handoff from Forethought to another SDK (e.g. Zendesk or Salesforce)
 - (void)startChatRequestedWithHandoffData:(ForethoughtHandoffData * _Nonnull)handoffData;
+@optional
+/// Customer clicked the close widget button. Make sure to call ForethoughtSDK.hide if you choose to implement this
+- (void)widgetClosed;
 @end
 
 

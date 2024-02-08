@@ -14,6 +14,15 @@ class AppDelegate: NSObject, UIApplicationDelegate, ForethoughtDelegate {
         return true
     }
 
+    func widgetClosed() {
+        // do something
+
+        // call hide to dismiss the widget
+        ForethoughtSDK.hide(animated: true) {
+            // do something on completion
+        }
+    }
+
     func startChatRequested(handoffData: ForethoughtHandoffData) {
         // do something
 

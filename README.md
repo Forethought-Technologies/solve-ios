@@ -128,6 +128,20 @@ func startChatRequested(handoffData: ForethoughtHandoffData) {
 }
 ```
 
+### widgetClosed delegate
+
+Called when the customer presses the close widget icon. Make sure to call `ForethoughtSDK.hide` if you choose to implement this.
+
+```swift
+func widgetClosed() {
+    // do something
+    // call hide to dismiss the widget
+    ForethoughtSDK.hide(animated: true) {
+        // do something on completion
+    }
+}
+```
+
 ### Plugins
 
 **⛔️ Plugins are deprecated in starting in version 2.0.0 ⛔️**

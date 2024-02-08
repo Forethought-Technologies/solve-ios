@@ -939,7 +939,34 @@
             "sugared_genericSig": "<Self where Self : Forethought.ForethoughtDelegate>",
             "protocolReq": true,
             "declAttributes": [
+              "RawDocComment",
               "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "widgetClosed",
+            "printedName": "widgetClosed()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Forethought@objc(pl)ForethoughtDelegate(im)widgetClosed",
+            "mangledName": "$s11Forethought0A8DelegateP12widgetClosedyyF",
+            "moduleName": "Forethought",
+            "genericSig": "<τ_0_0 where τ_0_0 : Forethought.ForethoughtDelegate>",
+            "sugared_genericSig": "<Self where Self : Forethought.ForethoughtDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -3719,7 +3746,7 @@
     {
       "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtHandoffData.swift",
       "kind": "StringLiteral",
-      "offset": 485,
+      "offset": 770,
       "length": 22,
       "value": "\"Forethought.ForethoughtHandoffData\""
     },

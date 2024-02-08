@@ -27,6 +27,7 @@ extension Forethought.ForethoughtViewController : WebKit.WKScriptMessageHandler 
 }
 @objc public protocol ForethoughtDelegate {
   @objc func startChatRequested(handoffData: Forethought.ForethoughtHandoffData)
+  @objc optional func widgetClosed()
 }
 @_hasMissingDesignatedInitializers @objc public class ForethoughtHandoffData : ObjectiveC.NSObject {
   final public let question: Swift.String?
