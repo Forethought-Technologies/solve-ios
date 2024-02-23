@@ -26,17 +26,9 @@ extension Forethought.ForethoughtViewController : WebKit.WKScriptMessageHandler 
   @_Concurrency.MainActor(unsafe) public func sendHandoffStatus(success: Swift.Bool)
 }
 @objc public protocol ForethoughtDelegate {
-  @objc func startChatRequested(handoffData: Forethought.ForethoughtHandoffData)
+  @objc optional func startChatRequested(handoffData: Forethought.ForethoughtHandoffData)
   @objc optional func widgetClosed()
-}
-@_hasMissingDesignatedInitializers @objc public class ForethoughtHandoffData : ObjectiveC.NSObject {
-  final public let question: Swift.String?
-  final public let name: Swift.String?
-  final public let email: Swift.String?
-  final public let integration: Swift.String?
-  final public let department: Swift.String?
-  final public let additionalParameters: [Swift.String : Any]?
-  @objc deinit
+  @objc optional func widgetError(errorData: Forethought.ForethoughtErrorData)
 }
 @available(iOS 13.0, *)
 public struct ForethoughtView : SwiftUI.UIViewControllerRepresentable {
@@ -77,5 +69,18 @@ public struct ForethoughtView : SwiftUI.UIViewControllerRepresentable {
   @objc public class func hide(animated: Swift.Bool, completion: @escaping () -> Swift.Void)
   @objc public class func sendHandoffResponse(success: Swift.Bool)
   @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class ForethoughtErrorData : ObjectiveC.NSObject {
+  final public let error: Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class ForethoughtHandoffData : ObjectiveC.NSObject {
+  final public let question: Swift.String?
+  final public let name: Swift.String?
+  final public let email: Swift.String?
+  final public let integration: Swift.String?
+  final public let department: Swift.String?
+  final public let additionalParameters: [Swift.String : Any]?
   @objc deinit
 }

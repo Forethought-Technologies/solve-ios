@@ -255,15 +255,26 @@ using UInt = size_t;
 
 #if defined(__OBJC__)
 @class ForethoughtHandoffData;
+@class ForethoughtErrorData;
 
 /// An optional delegate to handle custom integrations for handoffs
 SWIFT_PROTOCOL("_TtP11Forethought19ForethoughtDelegate_")
 @protocol ForethoughtDelegate
+@optional
 /// Customer requested a handoff. Implement your own handoff from Forethought to another SDK (e.g. Zendesk or Salesforce)
 - (void)startChatRequestedWithHandoffData:(ForethoughtHandoffData * _Nonnull)handoffData;
-@optional
 /// Customer clicked the close widget button. Make sure to call ForethoughtSDK.hide if you choose to implement this
 - (void)widgetClosed;
+/// Widget experienced an error causing it not be able to render
+- (void)widgetErrorWithErrorData:(ForethoughtErrorData * _Nonnull)errorData;
+@end
+
+
+/// A structured object for handling errors
+SWIFT_CLASS("_TtC11Forethought20ForethoughtErrorData")
+@interface ForethoughtErrorData : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -622,15 +633,26 @@ using UInt = size_t;
 
 #if defined(__OBJC__)
 @class ForethoughtHandoffData;
+@class ForethoughtErrorData;
 
 /// An optional delegate to handle custom integrations for handoffs
 SWIFT_PROTOCOL("_TtP11Forethought19ForethoughtDelegate_")
 @protocol ForethoughtDelegate
+@optional
 /// Customer requested a handoff. Implement your own handoff from Forethought to another SDK (e.g. Zendesk or Salesforce)
 - (void)startChatRequestedWithHandoffData:(ForethoughtHandoffData * _Nonnull)handoffData;
-@optional
 /// Customer clicked the close widget button. Make sure to call ForethoughtSDK.hide if you choose to implement this
 - (void)widgetClosed;
+/// Widget experienced an error causing it not be able to render
+- (void)widgetErrorWithErrorData:(ForethoughtErrorData * _Nonnull)errorData;
+@end
+
+
+/// A structured object for handling errors
+SWIFT_CLASS("_TtC11Forethought20ForethoughtErrorData")
+@interface ForethoughtErrorData : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 

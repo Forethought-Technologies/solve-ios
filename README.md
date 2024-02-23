@@ -45,11 +45,12 @@ A valid API key is needed in order to use the Forethought Solve SDK. In additon 
     ForethoughtSDK.show()
     ```
 
-## Other ways to open
+## Other ways to open widget
 
 ### SwiftUI View
 
 Returns a SwiftUI view
+
 ```swift
 ForethoughtSDK.forethoughtView
 ```
@@ -57,11 +58,12 @@ ForethoughtSDK.forethoughtView
 ### Use of a Navigation Controller Directly
 
 Attach the Forethought SDK directly onto a navigation stack:
-   ```swift
-   @IBAction func contactSupportTapped() {
-       ForethoughtSDK.show(fromNavigationController: self.navigationController)
-   }
-   ```
+
+```swift
+@IBAction func contactSupportTapped() {
+    ForethoughtSDK.show(fromNavigationController: self.navigationController)
+}
+```
 
 ## Optional Additions
 
@@ -70,7 +72,7 @@ Attach the Forethought SDK directly onto a navigation stack:
 Pass in Workflow Context Variables that have been defined via the Forethought Dashboard. (Note: you do not need to prefix with `data-ft`)
 
 ```swift
-ForethoughtSDK.dataParameters = ["language":"EN", "user-email": "test@ft.ai", "workflow-context-variable": "value"]
+ForethoughtSDK.dataParameters = ["language": "EN", "user-email": "test@ft.ai", "workflow-context-variable": "value"]
 ```
 
 ### Widget Configuration Parameters
@@ -81,9 +83,23 @@ Current [configuration parameters](https://support.forethought.ai/hc/en-us/artic
 ForethoughtSDK.configParameters = ["theme-color": "#7b33fb"]
 ```
 
-### Handoff Methods
+### Forethought Delegate
 
-To handoff customers from Forethought to an Agent Chat Provider like Kustomer:
+Forethought delegate is used to respond to events during the widget conversation that may need additional implementation.
+All methods in the `ForethoughtDelegate` are optional as well.
+
+```swift
+@objc public protocol ForethoughtDelegate: AnyObject {
+    // Customer requested a handoff. Implement your own handoff from Forethought to another SDK (e.g. Zendesk or Salesforce)
+    @objc optional func startChatRequested(handoffData: ForethoughtHandoffData)
+    // Customer clicked the close widget button. Make sure to call ForethoughtSDK.hide if you choose to implement this
+    @objc optional func widgetClosed()
+    // Widget experienced an error causing it not be able to render
+    @objc optional func widgetError(errorData: ForethoughtErrorData)
+}
+```
+
+To setup the delegate
 
 1. Set a delegate to the Forethought SDK. Do this before presenting the screen:
     ```swift
@@ -93,34 +109,20 @@ To handoff customers from Forethought to an Agent Chat Provider like Kustomer:
     ```swift
     class ViewController: UIViewController, ForethoughtDelegate {
     ```
-1. Conform to ForethoughtDelegate by adding the following method
-    ```swift
-    func startChatRequested(handoffData: ForethoughtHandoffData) {}
-    ```
-1. Add handoff implementation here. For example.
-    ```swift
-    Kustomer.show(...)
-    Kustomer.startNewConversation(...)
-    ```
-1. When the handoff is complete, `sendHandoffResponse` will continue the Forethought conversation and update the conversation context as successfully passed off to an Agent Chat Provider or not.
-    ```swift
-    ForethoughtSDK.sendHandoffResponse(success: true)
-    ```
+1. Add any of the optional delegate methods you want to handle
 
-#### Handoff Example
+#### startChatRequested Example
 
 ```swift
 func startChatRequested(handoffData: ForethoughtHandoffData) {
     print("Chat Requested: \(handoffData)")
 
     // close forethought widget
-    ForethoughtSDK.hide(animated: false)
-
-    // start a Kustomer chat
-    Kustomer.startNewConversation(initialMessage: KUSInitialMessage(body: handoffData.question, direction: .user))
-
-    // if handoff was successful
-    ForethoughtSDK.sendHandoffResponse(success: true)
+    ForethoughtSDK.hide(animated: false) {
+        // start a Kustomer chat
+        Kustomer.startNewConversation(initialMessage: KUSInitialMessage(body: handoffData.question, direction: .user))
+        ForethoughtSDK.sendHandoffResponse(success: true)
+    }
 
     // if handoff was unsuccessful
     ForethoughtSDK.show()
@@ -128,16 +130,26 @@ func startChatRequested(handoffData: ForethoughtHandoffData) {
 }
 ```
 
-### widgetClosed delegate
-
-Called when the customer presses the close widget icon. Make sure to call `ForethoughtSDK.hide` if you choose to implement this.
+#### widgetClosed Example
 
 ```swift
 func widgetClosed() {
-    // do something
-    // call hide to dismiss the widget
+    // add any additional logic here
+
     ForethoughtSDK.hide(animated: true) {
-        // do something on completion
+        print("forethought - widgetClosed")
+    }
+}
+```
+
+#### widgetError Example
+
+```swift
+func widgetError(errorData: ForethoughtErrorData) {
+    // add any additional logic here
+
+    ForethoughtSDK.hide(animated: true) {
+        print("forethought - \(errorData.error)")
     }
 }
 ```

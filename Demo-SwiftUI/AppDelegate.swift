@@ -15,19 +15,21 @@ class AppDelegate: NSObject, UIApplicationDelegate, ForethoughtDelegate {
     }
 
     func widgetClosed() {
-        // do something
-
-        // call hide to dismiss the widget
         ForethoughtSDK.hide(animated: true) {
-            // do something on completion
+            print("forethought - widget closed")
         }
     }
 
     func startChatRequested(handoffData: ForethoughtHandoffData) {
-        // do something
-
         ForethoughtSDK.hide(animated: true) {
+            print("forethought - \(handoffData)")
             ForethoughtSDK.sendHandoffResponse(success: true)
+        }
+    }
+
+    func widgetError(errorData: ForethoughtErrorData) {
+        ForethoughtSDK.hide(animated: true) {
+            print("forethought - \(errorData.error)")
         }
     }
 }
