@@ -2281,6 +2281,105 @@
           },
           {
             "kind": "Var",
+            "name": "isOpen",
+            "printedName": "isOpen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A9DataStoreC6isOpenSbvp",
+            "mangledName": "$s11Forethought0A9DataStoreC6isOpenSbvp",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC6isOpenSbvg",
+                "mangledName": "$s11Forethought0A9DataStoreC6isOpenSbvg",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC6isOpenSbvs",
+                "mangledName": "$s11Forethought0A9DataStoreC6isOpenSbvs",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC6isOpenSbvM",
+                "mangledName": "$s11Forethought0A9DataStoreC6isOpenSbvM",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "apiKey",
             "printedName": "apiKey",
             "children": [
@@ -2300,7 +2399,7 @@
               "HasInitialValue",
               "HasStorage"
             ],
-            "fixedbinaryorder": 0,
+            "fixedbinaryorder": 1,
             "hasStorage": true,
             "accessors": [
               {
@@ -2413,7 +2512,7 @@
               "HasInitialValue",
               "HasStorage"
             ],
-            "fixedbinaryorder": 1,
+            "fixedbinaryorder": 2,
             "hasStorage": true,
             "accessors": [
               {
@@ -2554,7 +2653,7 @@
               "HasInitialValue",
               "HasStorage"
             ],
-            "fixedbinaryorder": 2,
+            "fixedbinaryorder": 3,
             "hasStorage": true,
             "accessors": [
               {
@@ -2681,7 +2780,7 @@
               "HasStorage",
               "ReferenceOwnership"
             ],
-            "fixedbinaryorder": 3,
+            "fixedbinaryorder": 4,
             "ownership": 1,
             "hasStorage": true,
             "accessors": [
@@ -2806,7 +2905,7 @@
               "HasStorage",
               "RawDocComment"
             ],
-            "fixedbinaryorder": 4,
+            "fixedbinaryorder": 5,
             "hasStorage": true,
             "accessors": [
               {
@@ -3923,26 +4022,33 @@
       "kind": "StringLiteral",
       "offset": 414,
       "length": 7,
-      "value": "\"2.2.0\""
+      "value": "\"2.2.1\""
+    },
+    {
+      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5039,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "StringLiteral",
-      "offset": 4967,
+      "offset": 5070,
       "length": 19,
       "value": "\"__YOUR_KEY_HERE__\""
     },
     {
       "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Dictionary",
-      "offset": 5035,
+      "offset": 5133,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Dictionary",
-      "offset": 5084,
+      "offset": 5182,
       "length": 3,
       "value": "[]"
     },

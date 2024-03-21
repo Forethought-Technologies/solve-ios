@@ -14,7 +14,7 @@
 		</data>
 		<key>Modules/Forethought.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		MBC5AYBnHZdctCYKqa3rVQt2A7s=
+		eQiXpPnmti5/ut/3HVsSD1MIPy8=
 		</data>
 		<key>Modules/Forethought.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/Forethought.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		45mLolrBIcWBN8punSOY2PtRPBY=
+		ORKiq4t/9LN6N70gHVesdpbD1fk=
 		</data>
 		<key>Modules/Forethought.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		MBC5AYBnHZdctCYKqa3rVQt2A7s=
+		eQiXpPnmti5/ut/3HVsSD1MIPy8=
 		</data>
 		<key>Modules/Forethought.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/Forethought.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		F8KThLDjzeDIBAOW6IP9z2X5r9M=
+		/NGeSv952dZORoc5V/ki6WVul1k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UjSBMDA7PwAAZps7SXSC0R2NME9aNHAeGtAayqBuRg0=
+			Bkg5B8+fWacbZ0mmFAcpSDjd2tWY0mVQ1hpi9pt/gyw=
 			</data>
 		</dict>
 		<key>Modules/Forethought.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fhL8JvQQzUTbMCGdpQc8syaaN7vpxDS281Pvz6l2woo=
+			iAe8hK7zCYXhA/GaXXTC2houXqJTxA0q8vMUvHHCAco=
 			</data>
 		</dict>
 		<key>Modules/Forethought.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UjSBMDA7PwAAZps7SXSC0R2NME9aNHAeGtAayqBuRg0=
+			Bkg5B8+fWacbZ0mmFAcpSDjd2tWY0mVQ1hpi9pt/gyw=
 			</data>
 		</dict>
 		<key>Modules/Forethought.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j1VmnhyvV7YdZha10rx3Gf+TH6xKpKCTbSRyrcBYoJI=
+			PXFBZ4AVzjBnctizk1xKCgjm+uM6O5aJyJhcUSxhHTc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
