@@ -227,7 +227,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(API_KEY:configParameters:dataParameters:)",
+            "printedName": "init(API_KEY:configParameters:dataParameters:additionalParameters:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -298,13 +298,42 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController(im)initWithAPI_KEY:configParameters:dataParameters:",
-            "mangledName": "$s11Forethought0A14ViewControllerC7API_KEY16configParameters04dataG0ACSS_SDyS2SGSgAHtcfc",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController(im)initWithAPI_KEY:configParameters:dataParameters:additionalParameters:",
+            "mangledName": "$s11Forethought0A14ViewControllerC7API_KEY16configParameters04dataG0010additionalG0ACSS_SDyS2SGSgA2Itcfc",
             "moduleName": "Forethought",
-            "objc_name": "initWithAPI_KEY:configParameters:dataParameters:",
+            "objc_name": "initWithAPI_KEY:configParameters:dataParameters:additionalParameters:",
             "declAttributes": [
               "Custom",
               "ObjC"
@@ -1761,6 +1790,147 @@
           },
           {
             "kind": "Var",
+            "name": "additionalParameters",
+            "printedName": "additionalParameters",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cpy)additionalParameters",
+            "mangledName": "$s11Forethought0A3SDKC20additionalParametersSDyS2SGvpZ",
+            "moduleName": "Forethought",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cm)additionalParameters",
+                "mangledName": "$s11Forethought0A3SDKC20additionalParametersSDyS2SGvgZ",
+                "moduleName": "Forethought",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cm)setAdditionalParameters:",
+                "mangledName": "$s11Forethought0A3SDKC20additionalParametersSDyS2SGvsZ",
+                "moduleName": "Forethought",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A3SDKC20additionalParametersSDyS2SGvMZ",
+                "mangledName": "$s11Forethought0A3SDKC20additionalParametersSDyS2SGvMZ",
+                "moduleName": "Forethought",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "delegate",
             "printedName": "delegate",
             "children": [
@@ -2761,6 +2931,147 @@
           },
           {
             "kind": "Var",
+            "name": "additionalParameters",
+            "printedName": "additionalParameters",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A9DataStoreC20additionalParametersSDyS2SGvp",
+            "mangledName": "$s11Forethought0A9DataStoreC20additionalParametersSDyS2SGvp",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 4,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC20additionalParametersSDyS2SGvg",
+                "mangledName": "$s11Forethought0A9DataStoreC20additionalParametersSDyS2SGvg",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC20additionalParametersSDyS2SGvs",
+                "mangledName": "$s11Forethought0A9DataStoreC20additionalParametersSDyS2SGvs",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC20additionalParametersSDyS2SGvM",
+                "mangledName": "$s11Forethought0A9DataStoreC20additionalParametersSDyS2SGvM",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "delegate",
             "printedName": "delegate",
             "children": [
@@ -2780,7 +3091,7 @@
               "HasStorage",
               "ReferenceOwnership"
             ],
-            "fixedbinaryorder": 4,
+            "fixedbinaryorder": 5,
             "ownership": 1,
             "hasStorage": true,
             "accessors": [
@@ -2905,7 +3216,7 @@
               "HasStorage",
               "RawDocComment"
             ],
-            "fixedbinaryorder": 5,
+            "fixedbinaryorder": 6,
             "hasStorage": true,
             "accessors": [
               {
@@ -4022,33 +4333,40 @@
       "kind": "StringLiteral",
       "offset": 414,
       "length": 7,
-      "value": "\"2.2.1\""
+      "value": "\"2.3.0\""
     },
     {
       "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 5039,
+      "offset": 5648,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "StringLiteral",
-      "offset": 5070,
+      "offset": 5679,
       "length": 19,
       "value": "\"__YOUR_KEY_HERE__\""
     },
     {
       "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Dictionary",
-      "offset": 5133,
+      "offset": 5742,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Dictionary",
-      "offset": 5182,
+      "offset": 5791,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "kind": "Dictionary",
+      "offset": 5844,
       "length": 3,
       "value": "[]"
     },

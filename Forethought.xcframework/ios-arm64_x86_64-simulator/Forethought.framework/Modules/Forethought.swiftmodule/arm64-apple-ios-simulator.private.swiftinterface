@@ -55,6 +55,10 @@ public struct ForethoughtView : SwiftUI.UIViewControllerRepresentable {
     @objc get
     @objc set(newValue)
   }
+  @objc public static var additionalParameters: [Swift.String : Swift.String] {
+    @objc get
+    @objc set(newValue)
+  }
   @objc public static var delegate: Forethought.ForethoughtDelegate? {
     @objc get
     @objc set(newValue)

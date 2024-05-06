@@ -294,13 +294,19 @@ SWIFT_CLASS("_TtC11Forethought22ForethoughtHandoffData")
 SWIFT_CLASS("_TtC11Forethought14ForethoughtSDK")
 @interface ForethoughtSDK : NSObject
 /// A dictionary of data parameters that can be passed from your app to Forethought
+/// data-ft- will be prepended to these parameters
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSDictionary<NSString *, NSString *> * _Nonnull dataParameters;)
 + (NSDictionary<NSString *, NSString *> * _Nonnull)dataParameters SWIFT_WARN_UNUSED_RESULT;
 + (void)setDataParameters:(NSDictionary<NSString *, NSString *> * _Nonnull)newValue;
 /// A dictionary of configuration parameters that can be passed from your app to Forethought
+/// config-ft- will be prepended to these parameters
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSDictionary<NSString *, NSString *> * _Nonnull configParameters;)
 + (NSDictionary<NSString *, NSString *> * _Nonnull)configParameters SWIFT_WARN_UNUSED_RESULT;
 + (void)setConfigParameters:(NSDictionary<NSString *, NSString *> * _Nonnull)newValue;
+/// A dictionary of configuration parameters that can be passed from your app to Forethought
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSDictionary<NSString *, NSString *> * _Nonnull additionalParameters;)
++ (NSDictionary<NSString *, NSString *> * _Nonnull)additionalParameters SWIFT_WARN_UNUSED_RESULT;
++ (void)setAdditionalParameters:(NSDictionary<NSString *, NSString *> * _Nonnull)newValue;
 /// An optional delegate to handle custom integrations for handoffs
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <ForethoughtDelegate> _Nullable delegate;)
 + (id <ForethoughtDelegate> _Nullable)delegate SWIFT_WARN_UNUSED_RESULT;
@@ -672,13 +678,19 @@ SWIFT_CLASS("_TtC11Forethought22ForethoughtHandoffData")
 SWIFT_CLASS("_TtC11Forethought14ForethoughtSDK")
 @interface ForethoughtSDK : NSObject
 /// A dictionary of data parameters that can be passed from your app to Forethought
+/// data-ft- will be prepended to these parameters
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSDictionary<NSString *, NSString *> * _Nonnull dataParameters;)
 + (NSDictionary<NSString *, NSString *> * _Nonnull)dataParameters SWIFT_WARN_UNUSED_RESULT;
 + (void)setDataParameters:(NSDictionary<NSString *, NSString *> * _Nonnull)newValue;
 /// A dictionary of configuration parameters that can be passed from your app to Forethought
+/// config-ft- will be prepended to these parameters
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSDictionary<NSString *, NSString *> * _Nonnull configParameters;)
 + (NSDictionary<NSString *, NSString *> * _Nonnull)configParameters SWIFT_WARN_UNUSED_RESULT;
 + (void)setConfigParameters:(NSDictionary<NSString *, NSString *> * _Nonnull)newValue;
+/// A dictionary of configuration parameters that can be passed from your app to Forethought
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSDictionary<NSString *, NSString *> * _Nonnull additionalParameters;)
++ (NSDictionary<NSString *, NSString *> * _Nonnull)additionalParameters SWIFT_WARN_UNUSED_RESULT;
++ (void)setAdditionalParameters:(NSDictionary<NSString *, NSString *> * _Nonnull)newValue;
 /// An optional delegate to handle custom integrations for handoffs
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <ForethoughtDelegate> _Nullable delegate;)
 + (id <ForethoughtDelegate> _Nullable)delegate SWIFT_WARN_UNUSED_RESULT;
