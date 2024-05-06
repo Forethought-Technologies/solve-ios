@@ -83,6 +83,14 @@ Current [configuration parameters](https://support.forethought.ai/hc/en-us/artic
 ForethoughtSDK.configParameters = ["theme-color": "#7b33fb"]
 ```
 
+### Additional Parameters
+
+Pass in non `data-ft` / `config-ft` using ForethoughtSDK.additionalParameters. A comprehensive list of parameters can be found [here.](https://support.forethought.ai/hc/en-us/articles/1500002917301-Installation-Guide-for-Solve-Widget#:~:text=Additional%20Attributes)
+
+```swift
+ForethoughtSDK.additionalParameters = ["initial-intent-id": "79fc012c-cce3-4574-9b75-7b272310d854"]
+```
+
 ### Forethought Delegate
 
 Forethought delegate is used to respond to events during the widget conversation that may need additional implementation.
