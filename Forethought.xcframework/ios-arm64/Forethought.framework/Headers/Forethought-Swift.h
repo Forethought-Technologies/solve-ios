@@ -311,6 +311,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSDictionary<NSString *,
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <ForethoughtDelegate> _Nullable delegate;)
 + (id <ForethoughtDelegate> _Nullable)delegate SWIFT_WARN_UNUSED_RESULT;
 + (void)setDelegate:(id <ForethoughtDelegate> _Nullable)newValue;
+/// An optional delegate to handle custom integrations for handoffs
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class) UIModalPresentationStyle modalPresentationStyle;)
++ (UIModalPresentationStyle)modalPresentationStyle SWIFT_WARN_UNUSED_RESULT;
++ (void)setModalPresentationStyle:(UIModalPresentationStyle)newValue;
 /// To be called within your application:didFinishLaunchingWithOptions method. Initializes Forethought
 + (void)startWithApiKey:(NSString * _Nonnull)apiKey;
 /// Show the Forethought Solve View, Presented Modally
@@ -359,7 +363,7 @@ SWIFT_CLASS("_TtC11Forethought25ForethoughtViewController")
 - (void)loadView;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
-- (void)viewWillDisappear:(BOOL)animated;
+- (void)viewDidDisappear:(BOOL)animated;
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(SWIFT_NOESCAPE void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
 - (void)webView:(WKWebView * _Nonnull)webView didStartProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;

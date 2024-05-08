@@ -511,8 +511,8 @@
           },
           {
             "kind": "Function",
-            "name": "viewWillDisappear",
-            "printedName": "viewWillDisappear(_:)",
+            "name": "viewDidDisappear",
+            "printedName": "viewDidDisappear(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -527,12 +527,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController(im)viewWillDisappear:",
-            "mangledName": "$s11Forethought0A14ViewControllerC17viewWillDisappearyySbF",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController(im)viewDidDisappear:",
+            "mangledName": "$s11Forethought0A14ViewControllerC16viewDidDisappearyySbF",
             "moduleName": "Forethought",
             "overriding": true,
             "isOpen": true,
-            "objc_name": "viewWillDisappear:",
+            "objc_name": "viewDidDisappear:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -2054,6 +2054,105 @@
           },
           {
             "kind": "Var",
+            "name": "modalPresentationStyle",
+            "printedName": "modalPresentationStyle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIModalPresentationStyle",
+                "printedName": "UIKit.UIModalPresentationStyle",
+                "usr": "c:@E@UIModalPresentationStyle"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cpy)modalPresentationStyle",
+            "mangledName": "$s11Forethought0A3SDKC22modalPresentationStyleSo07UIModaldE0VvpZ",
+            "moduleName": "Forethought",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIModalPresentationStyle",
+                    "printedName": "UIKit.UIModalPresentationStyle",
+                    "usr": "c:@E@UIModalPresentationStyle"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cm)modalPresentationStyle",
+                "mangledName": "$s11Forethought0A3SDKC22modalPresentationStyleSo07UIModaldE0VvgZ",
+                "moduleName": "Forethought",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIModalPresentationStyle",
+                    "printedName": "UIKit.UIModalPresentationStyle",
+                    "usr": "c:@E@UIModalPresentationStyle"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cm)setModalPresentationStyle:",
+                "mangledName": "$s11Forethought0A3SDKC22modalPresentationStyleSo07UIModaldE0VvsZ",
+                "moduleName": "Forethought",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A3SDKC22modalPresentationStyleSo07UIModaldE0VvMZ",
+                "mangledName": "$s11Forethought0A3SDKC22modalPresentationStyleSo07UIModaldE0VvMZ",
+                "moduleName": "Forethought",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "forethoughtView",
             "printedName": "forethoughtView",
             "children": [
@@ -3072,6 +3171,105 @@
           },
           {
             "kind": "Var",
+            "name": "modalPresentationStyle",
+            "printedName": "modalPresentationStyle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIModalPresentationStyle",
+                "printedName": "UIKit.UIModalPresentationStyle",
+                "usr": "c:@E@UIModalPresentationStyle"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A9DataStoreC22modalPresentationStyleSo07UIModaleF0Vvp",
+            "mangledName": "$s11Forethought0A9DataStoreC22modalPresentationStyleSo07UIModaleF0Vvp",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 5,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIModalPresentationStyle",
+                    "printedName": "UIKit.UIModalPresentationStyle",
+                    "usr": "c:@E@UIModalPresentationStyle"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC22modalPresentationStyleSo07UIModaleF0Vvg",
+                "mangledName": "$s11Forethought0A9DataStoreC22modalPresentationStyleSo07UIModaleF0Vvg",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIModalPresentationStyle",
+                    "printedName": "UIKit.UIModalPresentationStyle",
+                    "usr": "c:@E@UIModalPresentationStyle"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC22modalPresentationStyleSo07UIModaleF0Vvs",
+                "mangledName": "$s11Forethought0A9DataStoreC22modalPresentationStyleSo07UIModaleF0Vvs",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC22modalPresentationStyleSo07UIModaleF0VvM",
+                "mangledName": "$s11Forethought0A9DataStoreC22modalPresentationStyleSo07UIModaleF0VvM",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "delegate",
             "printedName": "delegate",
             "children": [
@@ -3091,7 +3289,7 @@
               "HasStorage",
               "ReferenceOwnership"
             ],
-            "fixedbinaryorder": 5,
+            "fixedbinaryorder": 6,
             "ownership": 1,
             "hasStorage": true,
             "accessors": [
@@ -3216,7 +3414,7 @@
               "HasStorage",
               "RawDocComment"
             ],
-            "fixedbinaryorder": 6,
+            "fixedbinaryorder": 7,
             "hasStorage": true,
             "accessors": [
               {
@@ -4282,49 +4480,49 @@
     {
       "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
-      "offset": 440,
+      "offset": 508,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
-      "offset": 465,
+      "offset": 533,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
-      "offset": 929,
+      "offset": 997,
       "length": 26,
       "value": "\"&config-ft-hide-nav=true\""
     },
     {
       "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
-      "offset": 963,
+      "offset": 1031,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1028,
+      "offset": 1096,
       "length": 26,
       "value": "\"&config-ft-hide-nav=true\""
     },
     {
       "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 847,
+      "offset": 915,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
-      "offset": 281,
+      "offset": 349,
       "length": 25,
       "value": "\"Forethought.ForethoughtViewController\""
     },
@@ -4333,40 +4531,40 @@
       "kind": "StringLiteral",
       "offset": 414,
       "length": 7,
-      "value": "\"2.3.0\""
+      "value": "\"2.4.0\""
     },
     {
       "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 5648,
+      "offset": 6123,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "StringLiteral",
-      "offset": 5679,
+      "offset": 6154,
       "length": 19,
       "value": "\"__YOUR_KEY_HERE__\""
     },
     {
       "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Dictionary",
-      "offset": 5742,
+      "offset": 6217,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Dictionary",
-      "offset": 5791,
+      "offset": 6266,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Dictionary",
-      "offset": 5844,
+      "offset": 6319,
       "length": 3,
       "value": "[]"
     },

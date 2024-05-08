@@ -91,6 +91,16 @@ Pass in non `data-ft` / `config-ft` using ForethoughtSDK.additionalParameters. A
 ForethoughtSDK.additionalParameters = ["initial-intent-id": "79fc012c-cce3-4574-9b75-7b272310d854"]
 ```
 
+### Other customizations
+
+#### ForethoughtSDK.modalPresentationStyle
+
+Default style is `UIModalPresentationStyle.popover` (Note this does not apply when using `fromNavigationController`).
+
+```swift
+ForethoughtSDK.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+```
+
 ### Forethought Delegate
 
 Forethought delegate is used to respond to events during the widget conversation that may need additional implementation.
