@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "Forethought",
+    "printedName": "Forethought",
     "children": [
       {
         "kind": "Import",
@@ -34,7 +34,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "Forethought.ForethoughtDelegate?"
+                "printedName": "(any Forethought.ForethoughtDelegate)?"
               }
             ],
             "declKind": "Var",
@@ -43,8 +43,9 @@
             "moduleName": "Forethought",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
               "HasStorage",
               "ReferenceOwnership"
             ],
@@ -59,12 +60,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Forethought.ForethoughtDelegate?",
+                    "printedName": "(any Forethought.ForethoughtDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ForethoughtDelegate",
-                        "printedName": "Forethought.ForethoughtDelegate",
+                        "printedName": "any Forethought.ForethoughtDelegate",
                         "usr": "c:@M@Forethought@objc(pl)ForethoughtDelegate"
                       }
                     ],
@@ -92,12 +93,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Forethought.ForethoughtDelegate?",
+                    "printedName": "(any Forethought.ForethoughtDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ForethoughtDelegate",
-                        "printedName": "Forethought.ForethoughtDelegate",
+                        "printedName": "any Forethought.ForethoughtDelegate",
                         "usr": "c:@M@Forethought@objc(pl)ForethoughtDelegate"
                       }
                     ],
@@ -152,6 +153,7 @@
             "isOpen": true,
             "declAttributes": [
               "HasInitialValue",
+              "Preconcurrency",
               "Custom",
               "HasStorage",
               "RawDocComment"
@@ -335,6 +337,7 @@
             "moduleName": "Forethought",
             "objc_name": "initWithAPI_KEY:configParameters:dataParameters:additionalParameters:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -375,6 +378,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -401,6 +405,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -428,6 +433,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -461,6 +467,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -484,6 +491,7 @@
             "moduleName": "Forethought",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -505,6 +513,7 @@
             "moduleName": "Forethought",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
@@ -536,6 +545,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -559,6 +569,7 @@
             "moduleName": "Forethought",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "RawDocComment"
             ],
@@ -616,6 +627,7 @@
             "objc_name": "webView:decidePolicyForNavigationAction:decisionHandler:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -661,6 +673,7 @@
             "objc_name": "webView:didStartProvisionalNavigation:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -705,6 +718,7 @@
             "objc_name": "webView:didFinishNavigation:",
             "declAttributes": [
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -760,6 +774,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -797,6 +812,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -821,6 +837,7 @@
             "moduleName": "Forethought",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -851,6 +868,7 @@
             "moduleName": "Forethought",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -864,6 +882,7 @@
         "moduleName": "Forethought",
         "isOpen": true,
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "RawDocComment",
@@ -877,6 +896,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -925,6 +958,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -1046,6 +1086,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1094,6 +1150,7 @@
             "mangledName": "$s11Forethought0A4ViewV20makeUIViewController7contextAA0abE0C7SwiftUI0dE20RepresentableContextVyACG_tF",
             "moduleName": "Forethought",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1135,6 +1192,7 @@
             "mangledName": "$s11Forethought0A4ViewV22updateUIViewController_7contextyAA0abE0C_7SwiftUI0dE20RepresentableContextVyACGtF",
             "moduleName": "Forethought",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1157,6 +1215,10 @@
             "mangledName": "$s11Forethought0A4ViewVACycfc",
             "moduleName": "Forethought",
             "implicit": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
             "init_kind": "Designated"
           }
         ],
@@ -1166,10 +1228,26 @@
         "moduleName": "Forethought",
         "intro_iOS": "13.0",
         "declAttributes": [
+          "Preconcurrency",
+          "Custom",
           "AccessControl",
           "Available"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "UIViewControllerRepresentable",
@@ -1225,6 +1303,13 @@
             ],
             "usr": "s:7SwiftUI4ViewP",
             "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -1258,6 +1343,7 @@
             "moduleName": "Forethought",
             "static": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -1308,6 +1394,7 @@
             "moduleName": "Forethought",
             "implicit": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "init_kind": "Designated"
@@ -1319,11 +1406,26 @@
         "moduleName": "Forethought",
         "intro_iOS": "13.0",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "Available"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "PreviewProvider",
@@ -1359,6 +1461,13 @@
             "printedName": "_PreviewProvider",
             "usr": "s:7SwiftUI16_PreviewProviderP",
             "mangledName": "$s7SwiftUI16_PreviewProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -1423,7 +1532,23 @@
         "usr": "s:11Forethought7HelpersC",
         "mangledName": "$s11Forethought7HelpersC",
         "moduleName": "Forethought",
-        "isOpen": true
+        "isOpen": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -1937,12 +2062,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Forethought.ForethoughtDelegate?",
+                "printedName": "(any Forethought.ForethoughtDelegate)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "ForethoughtDelegate",
-                    "printedName": "Forethought.ForethoughtDelegate",
+                    "printedName": "any Forethought.ForethoughtDelegate",
                     "usr": "c:@M@Forethought@objc(pl)ForethoughtDelegate"
                   }
                 ],
@@ -1969,12 +2094,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Forethought.ForethoughtDelegate?",
+                    "printedName": "(any Forethought.ForethoughtDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ForethoughtDelegate",
-                        "printedName": "Forethought.ForethoughtDelegate",
+                        "printedName": "any Forethought.ForethoughtDelegate",
                         "usr": "c:@M@Forethought@objc(pl)ForethoughtDelegate"
                       }
                     ],
@@ -2005,12 +2130,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Forethought.ForethoughtDelegate?",
+                    "printedName": "(any Forethought.ForethoughtDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ForethoughtDelegate",
-                        "printedName": "Forethought.ForethoughtDelegate",
+                        "printedName": "any Forethought.ForethoughtDelegate",
                         "usr": "c:@M@Forethought@objc(pl)ForethoughtDelegate"
                       }
                     ],
@@ -2441,6 +2566,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3276,7 +3415,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "Forethought.ForethoughtDelegate?"
+                "printedName": "(any Forethought.ForethoughtDelegate)?"
               }
             ],
             "declKind": "Var",
@@ -3301,12 +3440,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Forethought.ForethoughtDelegate?",
+                    "printedName": "(any Forethought.ForethoughtDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ForethoughtDelegate",
-                        "printedName": "Forethought.ForethoughtDelegate",
+                        "printedName": "any Forethought.ForethoughtDelegate",
                         "usr": "c:@M@Forethought@objc(pl)ForethoughtDelegate"
                       }
                     ],
@@ -3337,12 +3476,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Forethought.ForethoughtDelegate?",
+                    "printedName": "(any Forethought.ForethoughtDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ForethoughtDelegate",
-                        "printedName": "Forethought.ForethoughtDelegate",
+                        "printedName": "any Forethought.ForethoughtDelegate",
                         "usr": "c:@M@Forethought@objc(pl)ForethoughtDelegate"
                       }
                     ],
@@ -3535,6 +3674,22 @@
         "isOpen": true,
         "declAttributes": [
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -3681,6 +3836,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -4235,6 +4404,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4335,6 +4518,7 @@
             "moduleName": "Forethought",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "isFromExtension": true,
@@ -4380,6 +4564,7 @@
             "moduleName": "Forethought",
             "isOpen": true,
             "declAttributes": [
+              "Preconcurrency",
               "Custom"
             ],
             "isFromExtension": true,
@@ -4393,6 +4578,7 @@
         "intro_iOS": "2.0",
         "objc_name": "UINavigationController",
         "declAttributes": [
+          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -4408,6 +4594,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -4459,6 +4659,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -4471,116 +4678,95 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
       "offset": 160,
       "length": 38,
       "value": "\"https:\/\/solve-widget.forethought.ai\/\""
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
       "offset": 508,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
       "offset": 533,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
       "offset": 997,
       "length": 26,
       "value": "\"&config-ft-hide-nav=true\""
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
       "offset": 1031,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
       "offset": 1096,
       "length": 26,
       "value": "\"&config-ft-hide-nav=true\""
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 915,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 349,
-      "length": 25,
-      "value": "\"Forethought.ForethoughtViewController\""
-    },
-    {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "StringLiteral",
       "offset": 414,
       "length": 7,
-      "value": "\"2.4.0\""
+      "value": "\"2.4.1\""
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 6123,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "StringLiteral",
       "offset": 6154,
       "length": 19,
       "value": "\"__YOUR_KEY_HERE__\""
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Dictionary",
       "offset": 6217,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Dictionary",
       "offset": 6266,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Dictionary",
       "offset": 6319,
       "length": 3,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtMessageEventObjects.swift",
-      "kind": "StringLiteral",
-      "offset": 192,
-      "length": 20,
-      "value": "\"Forethought.ForethoughtErrorData\""
-    },
-    {
-      "filePath": "\/Users\/andrew\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtMessageEventObjects.swift",
-      "kind": "StringLiteral",
-      "offset": 623,
-      "length": 22,
-      "value": "\"Forethought.ForethoughtHandoffData\""
     }
   ]
 }
