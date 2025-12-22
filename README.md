@@ -37,6 +37,9 @@ A valid API key is needed in order to use the Forethought Solve SDK. In additon 
 1. In `AppDelegate.swift` file, replace `__YOUR_KEY_HERE__` with a valid Forethought API key:
     ```swift
     ForethoughtSDK.start(apiKey: "__YOUR_KEY_HERE__")
+
+    //Solve Web Call
+    ForethoughtSDK.start(apiKey: "__YOUR_KEY_HERE__", isWebCall: true)
     ```
 1. Open the Forethought widget:
     ```swift
