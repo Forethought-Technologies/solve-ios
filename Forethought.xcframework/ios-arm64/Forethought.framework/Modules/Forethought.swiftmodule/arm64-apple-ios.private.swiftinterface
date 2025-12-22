@@ -75,7 +75,7 @@ extension Forethought.ForethoughtViewController : WebKit.WKScriptMessageHandler 
   public static var forethoughtView: Forethought.ForethoughtView {
     get
   }
-  @objc public class func start(apiKey: Swift.String)
+  @objc public class func start(apiKey: Swift.String, isWebCall: Swift.Bool = false)
   @objc public class func show()
   @objc public class func show(fromNavigationController navigationController: UIKit.UINavigationController? = nil)
   @objc public class func hide(animated: Swift.Bool, completion: @escaping () -> Swift.Void)

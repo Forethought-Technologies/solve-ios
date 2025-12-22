@@ -1,5 +1,11 @@
 # Changelog
 
+**2.5.0** — 2025-12-22
+
+- added support for Solve Web Call
+
+⸻
+
 **2.4.1** — 2025-12-05
 
 - fixed a bug where certain characters in widget parameters would cause the widget to open in external browser

@@ -229,7 +229,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(API_KEY:configParameters:dataParameters:additionalParameters:)",
+            "printedName": "init(API_KEY:configParameters:dataParameters:additionalParameters:isWebCall:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -329,13 +329,20 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController(im)initWithAPI_KEY:configParameters:dataParameters:additionalParameters:",
-            "mangledName": "$s11Forethought0A14ViewControllerC7API_KEY16configParameters04dataG0010additionalG0ACSS_SDyS2SGSgA2Itcfc",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController(im)initWithAPI_KEY:configParameters:dataParameters:additionalParameters:isWebCall:",
+            "mangledName": "$s11Forethought0A14ViewControllerC7API_KEY16configParameters04dataG0010additionalG09isWebCallACSS_SDyS2SGSgA2JSbtcfc",
             "moduleName": "Forethought",
-            "objc_name": "initWithAPI_KEY:configParameters:dataParameters:additionalParameters:",
+            "objc_name": "initWithAPI_KEY:configParameters:dataParameters:additionalParameters:isWebCall:",
             "declAttributes": [
               "Preconcurrency",
               "Custom",
@@ -885,7 +892,6 @@
           "Preconcurrency",
           "Custom",
           "AccessControl",
-          "RawDocComment",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)UIViewController",
@@ -2328,7 +2334,7 @@
           {
             "kind": "Function",
             "name": "start",
-            "printedName": "start(apiKey:)",
+            "printedName": "start(apiKey:isWebCall:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2340,15 +2346,22 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cm)startWithApiKey:",
-            "mangledName": "$s11Forethought0A3SDKC5start6apiKeyySS_tFZ",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtSDK(cm)startWithApiKey:isWebCall:",
+            "mangledName": "$s11Forethought0A3SDKC5start6apiKey9isWebCallySS_SbtFZ",
             "moduleName": "Forethought",
             "static": true,
             "isOpen": true,
-            "objc_name": "startWithApiKey:",
+            "objc_name": "startWithApiKey:isWebCall:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -3648,6 +3661,105 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "isWebCall",
+            "printedName": "isWebCall",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Forethought0A9DataStoreC9isWebCallSbvp",
+            "mangledName": "$s11Forethought0A9DataStoreC9isWebCallSbvp",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 8,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC9isWebCallSbvg",
+                "mangledName": "$s11Forethought0A9DataStoreC9isWebCallSbvg",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC9isWebCallSbvs",
+                "mangledName": "$s11Forethought0A9DataStoreC9isWebCallSbvs",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Forethought0A9DataStoreC9isWebCallSbvM",
+                "mangledName": "$s11Forethought0A9DataStoreC9isWebCallSbvM",
+                "moduleName": "Forethought",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -4687,42 +4799,63 @@
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
-      "offset": 508,
+      "offset": 388,
+      "length": 19,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 400,
+      "length": 5,
+      "value": "\"voice\/\""
+    },
+    {
+      "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 581,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
-      "offset": 533,
+      "offset": 606,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
-      "offset": 997,
+      "offset": 1070,
       "length": 26,
       "value": "\"&config-ft-hide-nav=true\""
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1031,
+      "offset": 1104,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1096,
+      "offset": 1169,
       "length": 26,
       "value": "\"&config-ft-hide-nav=true\""
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 915,
+      "offset": 988,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1454,
       "length": 5,
       "value": "false"
     },
@@ -4731,42 +4864,56 @@
       "kind": "StringLiteral",
       "offset": 414,
       "length": 7,
-      "value": "\"2.4.1\""
+      "value": "\"2.5.0\""
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 6123,
+      "offset": 2791,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6251,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "StringLiteral",
-      "offset": 6154,
+      "offset": 6282,
       "length": 19,
       "value": "\"__YOUR_KEY_HERE__\""
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Dictionary",
-      "offset": 6217,
+      "offset": 6345,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Dictionary",
-      "offset": 6266,
+      "offset": 6394,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
       "kind": "Dictionary",
-      "offset": 6319,
+      "offset": 6447,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6851,
+      "length": 5,
+      "value": "false"
     }
   ]
 }

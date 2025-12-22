@@ -365,7 +365,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) UIModalPresentationStyle modal
 + (UIModalPresentationStyle)modalPresentationStyle SWIFT_WARN_UNUSED_RESULT;
 + (void)setModalPresentationStyle:(UIModalPresentationStyle)newValue;
 /// To be called within your application:didFinishLaunchingWithOptions method. Initializes Forethought
-+ (void)startWithApiKey:(NSString * _Nonnull)apiKey;
++ (void)startWithApiKey:(NSString * _Nonnull)apiKey isWebCall:(BOOL)isWebCall;
 /// Show the Forethought Solve View, Presented Modally
 + (void)show;
 /// Show the Forethought Solve View, Either Modally or pushed onto your navigation Stack
@@ -799,7 +799,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) UIModalPresentationStyle modal
 + (UIModalPresentationStyle)modalPresentationStyle SWIFT_WARN_UNUSED_RESULT;
 + (void)setModalPresentationStyle:(UIModalPresentationStyle)newValue;
 /// To be called within your application:didFinishLaunchingWithOptions method. Initializes Forethought
-+ (void)startWithApiKey:(NSString * _Nonnull)apiKey;
++ (void)startWithApiKey:(NSString * _Nonnull)apiKey isWebCall:(BOOL)isWebCall;
 /// Show the Forethought Solve View, Presented Modally
 + (void)show;
 /// Show the Forethought Solve View, Either Modally or pushed onto your navigation Stack
