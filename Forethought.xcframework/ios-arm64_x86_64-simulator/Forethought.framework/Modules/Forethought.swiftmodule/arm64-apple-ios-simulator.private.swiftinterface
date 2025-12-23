@@ -11,7 +11,7 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ForethoughtViewController : UIKit.UIViewController, UIKit.UIScrollViewDelegate, WebKit.WKNavigationDelegate {
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ForethoughtViewController : UIKit.UIViewController, UIKit.UIScrollViewDelegate, WebKit.WKNavigationDelegate, WebKit.WKUIDelegate {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func loadView()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
@@ -19,6 +19,8 @@ import _SwiftConcurrencyShims
   @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: (WebKit.WKNavigationActionPolicy) -> Swift.Void)
   @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
   @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @available(iOS 15.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, requestMediaCapturePermissionFor origin: WebKit.WKSecurityOrigin, initiatedByFrame frame: WebKit.WKFrameInfo, type: WebKit.WKMediaCaptureType, decisionHandler: @escaping (WebKit.WKPermissionDecision) -> Swift.Void)
   @objc deinit
 }
 extension Forethought.ForethoughtViewController : WebKit.WKScriptMessageHandler {

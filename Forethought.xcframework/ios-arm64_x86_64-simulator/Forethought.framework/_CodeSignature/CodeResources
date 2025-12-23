@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Forethought-Swift.h</key>
 		<data>
-		a7L6a4zxKg/9DQi66+nnrQGa5Cw=
+		IF8+KKjiENalbDmmSict075LY2s=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/Forethought.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		+29SsKrB5fwTTgK2FyglXMeV+UM=
+		1nE4oUS3nL0SsrPGaBIQFsRulrc=
 		</data>
 		<key>Modules/Forethought.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		wkkRUSlOJsx1H7wqkeHPFw7hpnw=
+		Re6yVJPdupyp4ElNf3wnEkvmS1U=
 		</data>
 		<key>Modules/Forethought.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/Forethought.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		wkkRUSlOJsx1H7wqkeHPFw7hpnw=
+		Re6yVJPdupyp4ElNf3wnEkvmS1U=
 		</data>
 		<key>Modules/Forethought.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vqW59jl+1WbF8BSt8H+WQlqunl0=
+		UhGjM7lQOCMyEkX37vdq8zzNjQo=
 		</data>
 		<key>Modules/Forethought.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		+29SsKrB5fwTTgK2FyglXMeV+UM=
+		1nE4oUS3nL0SsrPGaBIQFsRulrc=
 		</data>
 		<key>Modules/Forethought.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		hFIyD4V7OCziNfB/ja6BE3XlsKk=
+		JykR/JKXwjLhqOkQ+Gm+usPvtxU=
 		</data>
 		<key>Modules/Forethought.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/Forethought.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		hFIyD4V7OCziNfB/ja6BE3XlsKk=
+		JykR/JKXwjLhqOkQ+Gm+usPvtxU=
 		</data>
 		<key>Modules/Forethought.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5ZByuOrgw29/q2Rg4NtddsavR2E=
+		HYRA3c/J8nXgRFw316kQMGjRiqI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,21 +63,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ed+rvPK3y82M2jtc62s1JQKQ5PK5+svx7LdHGfpPcqY=
+			XjTu0lYMraYUjjrnD7FGN4yAdI2eFWgmQZTIVSA9cuc=
 			</data>
 		</dict>
 		<key>Modules/Forethought.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FcaQGr03I6vCNfy/agWB/wCXf+ANOxOj2n0gAYutw+E=
+			VKuj5GTL1/1Bbk7ebj9dOqsGkZ7odvZkuxNVNzaGveY=
 			</data>
 		</dict>
 		<key>Modules/Forethought.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q2BbtxMdCrlop3O+IJrPWQRD7fWOJQpH0u4FBYB1KFM=
+			Tr/yJCL06P/J/vEXWcdPU4wNTZfP/b142OzdbKcdHGg=
 			</data>
 		</dict>
 		<key>Modules/Forethought.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -91,28 +91,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q2BbtxMdCrlop3O+IJrPWQRD7fWOJQpH0u4FBYB1KFM=
+			Tr/yJCL06P/J/vEXWcdPU4wNTZfP/b142OzdbKcdHGg=
 			</data>
 		</dict>
 		<key>Modules/Forethought.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bVT+Ae8Bte/UAAKPJ1fmKo6w95UVZowkc6RvWYuMKYc=
+			lZ4ZKztJ6VNUBZ7zUgNmWh6HjMzSXk3BH6FJgfoCNPo=
 			</data>
 		</dict>
 		<key>Modules/Forethought.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FcaQGr03I6vCNfy/agWB/wCXf+ANOxOj2n0gAYutw+E=
+			VKuj5GTL1/1Bbk7ebj9dOqsGkZ7odvZkuxNVNzaGveY=
 			</data>
 		</dict>
 		<key>Modules/Forethought.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F9Byla1hU2ttl2q9R/bulEDjyz39Iz+vEBPi/Fiv3Xw=
+			9a/waC9n2dRjRioyMGP4/ADhWHumoWDLP0Kg3IJTUmI=
 			</data>
 		</dict>
 		<key>Modules/Forethought.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -126,14 +126,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			F9Byla1hU2ttl2q9R/bulEDjyz39Iz+vEBPi/Fiv3Xw=
+			9a/waC9n2dRjRioyMGP4/ADhWHumoWDLP0Kg3IJTUmI=
 			</data>
 		</dict>
 		<key>Modules/Forethought.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AcQPDckBUak7t3JUaAHphfM3dFnyDXk1HdK52Sll55k=
+			f5zTChJd9p6JA/y8OPCHTApOeFez8Fx0mv1K/4BI630=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -732,6 +732,75 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:requestMediaCapturePermissionFor:initiatedByFrame:type:decisionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKSecurityOrigin",
+                "printedName": "WebKit.WKSecurityOrigin",
+                "usr": "c:objc(cs)WKSecurityOrigin"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKFrameInfo",
+                "printedName": "WebKit.WKFrameInfo",
+                "usr": "c:objc(cs)WKFrameInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKMediaCaptureType",
+                "printedName": "WebKit.WKMediaCaptureType",
+                "usr": "c:@E@WKMediaCaptureType"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WebKit.WKPermissionDecision) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKPermissionDecision",
+                    "printedName": "WebKit.WKPermissionDecision",
+                    "usr": "c:@E@WKPermissionDecision"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Forethought@objc(cs)ForethoughtViewController(im)webView:requestMediaCapturePermissionForOrigin:initiatedByFrame:type:decisionHandler:",
+            "mangledName": "$s11Forethought0A14ViewControllerC03webB0_32requestMediaCapturePermissionFor16initiatedByFrame4type15decisionHandlerySo05WKWebB0C_So16WKSecurityOriginCSo11WKFrameInfoCSo07WKMediaG4TypeVySo20WKPermissionDecisionVctF",
+            "moduleName": "Forethought",
+            "isOpen": true,
+            "intro_iOS": "15.0",
+            "objc_name": "webView:requestMediaCapturePermissionForOrigin:initiatedByFrame:type:decisionHandler:",
+            "declAttributes": [
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(nibName:bundle:)",
@@ -4813,49 +4882,49 @@
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
-      "offset": 581,
+      "offset": 595,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
-      "offset": 606,
+      "offset": 620,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1070,
+      "offset": 1084,
       "length": 26,
       "value": "\"&config-ft-hide-nav=true\""
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1104,
+      "offset": 1118,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1169,
+      "offset": 1183,
       "length": 26,
       "value": "\"&config-ft-hide-nav=true\""
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 988,
+      "offset": 1002,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1454,
+      "offset": 1468,
       "length": 5,
       "value": "false"
     },
@@ -4864,7 +4933,7 @@
       "kind": "StringLiteral",
       "offset": 414,
       "length": 7,
-      "value": "\"2.5.0\""
+      "value": "\"2.5.1\""
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",

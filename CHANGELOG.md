@@ -1,5 +1,11 @@
 # Changelog
 
+**2.5.1** — 2025-12-23
+
+- improved permission handling for Solve Web Call
+
+⸻
+
 **2.5.0** — 2025-12-22
 
 - added support for Solve Web Call

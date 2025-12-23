@@ -404,9 +404,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) UIModalPresentationStyle modal
 @class WKWebView;
 @class WKNavigationAction;
 @class WKNavigation;
+@class WKSecurityOrigin;
+@class WKFrameInfo;
 @class NSBundle;
 SWIFT_CLASS("_TtC11Forethought25ForethoughtViewController")
-@interface ForethoughtViewController : UIViewController <UIScrollViewDelegate, WKNavigationDelegate>
+@interface ForethoughtViewController : UIViewController <UIScrollViewDelegate, WKNavigationDelegate, WKUIDelegate>
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)loadView;
 - (void)viewDidLoad;
@@ -415,6 +417,7 @@ SWIFT_CLASS("_TtC11Forethought25ForethoughtViewController")
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(SWIFT_NOESCAPE void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
 - (void)webView:(WKWebView * _Nonnull)webView didStartProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)webView:(WKWebView * _Nonnull)webView requestMediaCapturePermissionForOrigin:(WKSecurityOrigin * _Nonnull)origin initiatedByFrame:(WKFrameInfo * _Nonnull)frame type:(WKMediaCaptureType)type decisionHandler:(void (^ _Nonnull)(WKPermissionDecision))decisionHandler SWIFT_AVAILABILITY(ios,introduced=15.0);
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
