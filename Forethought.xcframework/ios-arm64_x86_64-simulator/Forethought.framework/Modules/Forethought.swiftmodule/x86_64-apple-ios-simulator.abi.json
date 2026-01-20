@@ -4895,36 +4895,43 @@
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 905,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1084,
+      "offset": 1123,
       "length": 26,
       "value": "\"&config-ft-hide-nav=true\""
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1118,
+      "offset": 1157,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1183,
+      "offset": 1222,
       "length": 26,
       "value": "\"&config-ft-hide-nav=true\""
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1002,
+      "offset": 1041,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/WebImplementation\/ForethoughtViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1468,
+      "offset": 1507,
       "length": 5,
       "value": "false"
     },
@@ -4933,7 +4940,7 @@
       "kind": "StringLiteral",
       "offset": 414,
       "length": 7,
-      "value": "\"2.5.1\""
+      "value": "\"2.5.2\""
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",
