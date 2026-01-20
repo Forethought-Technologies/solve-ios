@@ -1,5 +1,11 @@
 # Changelog
 
+**2.5.2** — 2026-01-20
+
+- Fixed an instance of Solve Web Call not rendering correctly
+
+⸻
+
 **2.5.1** — 2025-12-23
 
 - improved permission handling for Solve Web Call
