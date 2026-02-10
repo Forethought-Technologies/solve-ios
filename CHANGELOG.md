@@ -86,4 +86,4 @@
 
 ⸻
 
-All releases before **2.0.0** were development builds.
+All releases before **2.0.0** were development builds
