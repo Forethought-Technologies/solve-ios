@@ -4940,7 +4940,7 @@
       "kind": "StringLiteral",
       "offset": 414,
       "length": 7,
-      "value": "\"2.5.2\""
+      "value": "\"2.5.3\""
     },
     {
       "filePath": "\/Users\/andrew.schirmer\/projects\/solve-ios-source\/Sources\/Forethought\/ForethoughtSDK.swift",

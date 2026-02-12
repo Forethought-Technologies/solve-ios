@@ -1,5 +1,11 @@
 # Changelog
 
+**2.5.3** — 2026-02-12
+
+- Fixed keyboard layout issue
+
+⸻
+
 **2.5.2** — 2026-01-20
 
 - Fixed an instance of Solve Web Call not rendering correctly
