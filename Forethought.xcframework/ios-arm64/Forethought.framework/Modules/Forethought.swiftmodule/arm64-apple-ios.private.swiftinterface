@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Forethought
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Forethought
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import CloudKit
 import Foundation
 import Swift
@@ -27,11 +27,18 @@ extension Forethought.ForethoughtViewController : WebKit.WKScriptMessageHandler 
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
   @_Concurrency.MainActor @preconcurrency public func endCurrentChat()
   @_Concurrency.MainActor @preconcurrency public func sendHandoffStatus(success: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func sendTriggerEventResponse(identifier: Swift.String, payload: [Swift.String : Any])
+  @_Concurrency.MainActor @preconcurrency public func clearLocalData()
+  @_Concurrency.MainActor @preconcurrency public func launchQuery(query: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func updateConversationContext(_ context: [Swift.String : Any])
+  @_Concurrency.MainActor @preconcurrency public func updateConfigParams(_ params: [Swift.String : Any])
+  @_Concurrency.MainActor @preconcurrency public func sendMessage(_ message: Swift.String)
 }
 @objc public protocol ForethoughtDelegate {
   @objc optional func startChatRequested(handoffData: Forethought.ForethoughtHandoffData)
   @objc optional func widgetClosed()
   @objc optional func widgetError(errorData: Forethought.ForethoughtErrorData)
+  @objc optional func triggerEventReceived(triggerEventData: Forethought.ForethoughtTriggerEventData)
 }
 @available(iOS 13.0, *)
 @_Concurrency.MainActor @preconcurrency public struct ForethoughtView : SwiftUI.UIViewControllerRepresentable {
@@ -82,11 +89,23 @@ extension Forethought.ForethoughtViewController : WebKit.WKScriptMessageHandler 
   @objc public class func show(fromNavigationController navigationController: UIKit.UINavigationController? = nil)
   @objc public class func hide(animated: Swift.Bool, completion: @escaping () -> Swift.Void)
   @objc public class func sendHandoffResponse(success: Swift.Bool)
+  @objc public class func sendTriggerEventResponse(identifier: Swift.String, payload: [Swift.String : Any])
+  @objc public class func clearLocalData()
+  @objc public class func launchQuery(_ query: Swift.String)
+  @objc public class func updateConversationContext(_ context: [Swift.String : Any])
+  @objc public class func updateConfigParams(_ params: [Swift.String : Any])
+  @objc public class func sendMessage(_ message: Swift.String)
   @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class ForethoughtErrorData : ObjectiveC.NSObject {
   final public let error: Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class ForethoughtTriggerEventData : ObjectiveC.NSObject {
+  final public let name: Swift.String?
+  final public let expectedContextVariables: [Swift.String]
+  final public let additionalContext: [Swift.String : Any]?
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class ForethoughtHandoffData : ObjectiveC.NSObject {

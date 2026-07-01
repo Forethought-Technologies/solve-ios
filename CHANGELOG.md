@@ -1,5 +1,12 @@
 # Changelog
 
+**2.6.0** — 2026-07-01
+
+- Added trigger event support
+- Added APIs for the following `window.Forethought` APIs (clearLocalData, launchQuery, updateConversationContext, updateConfigParams, sendMessage)
+
+⸻
+
 **2.5.3** — 2026-02-12
 
 - Fixed keyboard layout issue

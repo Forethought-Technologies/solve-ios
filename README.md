@@ -175,6 +175,81 @@ func widgetError(errorData: ForethoughtErrorData) {
 }
 ```
 
+### Other APIs
+
+#### Trigger Event
+
+Trigger events are configured via the Forethought Dashboard and are emitted by the widget during a conversation. Implement the `triggerEventReceived` delegate method to respond to them, then call `ForethoughtSDK.sendTriggerEventResponse` with the payload the widget expects.
+
+```swift
+// ForethoughtDelegate
+@objc optional func triggerEventReceived(triggerEventData: ForethoughtTriggerEventData)
+```
+
+`ForethoughtTriggerEventData` exposes the following properties:
+
+```swift
+public class ForethoughtTriggerEventData: NSObject {
+    public let name: String?                          // The name of the trigger event
+    public let expectedContextVariables: [String]     // Context variable keys the widget expects back
+    public let additionalContext: [String: Any]?      // Any additional context sent with the event
+}
+```
+
+Example:
+
+```swift
+func triggerEventReceived(triggerEventData: ForethoughtTriggerEventData) {
+    print("Trigger event received: \(triggerEventData.name ?? "")")
+
+    // Build the payload using the expected context variables
+    let payload: [String: Any] = ["user-tier": "gold"]
+
+    // Respond to the trigger event. Use the event name as the identifier.
+    ForethoughtSDK.sendTriggerEventResponse(identifier: triggerEventData.name ?? "", payload: payload)
+}
+```
+
+#### clearLocalData
+
+Clears any locally cached data (e.g. conversation state) held by the SDK.
+
+```swift
+ForethoughtSDK.clearLocalData()
+```
+
+#### launchQuery
+
+Opens the widget with a query so the conversation starts from a specific question.
+
+```swift
+ForethoughtSDK.launchQuery("How do I reset my password?")
+```
+
+#### updateConversationContext
+
+Updates the context of the current conversation with additional key/value pairs.
+
+```swift
+ForethoughtSDK.updateConversationContext(["order-id": "12345", "user-tier": "gold"])
+```
+
+#### updateConfigParams
+
+Updates the widget configuration parameters at runtime (the same `config-ft` parameters described under [Widget Configuration Parameters](#widget-configuration-parameters)).
+
+```swift
+ForethoughtSDK.updateConfigParams(["theme-color": "#7b33fb"])
+```
+
+#### sendMessage
+
+Sends a message into the current conversation on the user's behalf.
+
+```swift
+ForethoughtSDK.sendMessage("I need help with my order")
+```
+
 ### Plugins
 
 **⛔️ Plugins are deprecated in starting in version 2.0.0 ⛔️**
