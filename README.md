@@ -231,7 +231,7 @@ ForethoughtSDK.launchQuery("How do I reset my password?")
 Updates the context of the current conversation with additional key/value pairs.
 
 ```swift
-ForethoughtSDK.updateConversationContext(["order-id": "12345", "user-tier": "gold"])
+ForethoughtSDK.updateConversationContext(["<cv_id>": "new cv value"])
 ```
 
 #### updateConfigParams
