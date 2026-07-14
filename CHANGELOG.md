@@ -1,5 +1,11 @@
 # Changelog
 
+**2.6.1** — 2026-07-14
+
+- Added `title` param when using `fromNavigationController`
+
+⸻
+
 **2.6.0** — 2026-07-01
 
 - Added trigger event support

@@ -448,6 +448,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) UIModalPresentationStyle modal
 ///   </li>
 /// </ul>
 + (void)showFromNavigationController:(UINavigationController * _Nullable)navigationController;
+/// Show the Forethought Solve View, Either Modally or pushed onto your navigation Stack
+/// If you’re unsure what to use, simply pass in ‘nil’
+/// <ul>
+///   <li>
+///     Parameters:
+///   </li>
+///   <li>
+///     fromNavigationController: The UINavigationController you would like to use to push onto your view stack.
+///   </li>
+///   <li>
+///     title: An optional title to display in the navigation bar. Only visible when pushed onto a navigation stack.
+///   </li>
+/// </ul>
++ (void)showFromNavigationController:(UINavigationController * _Nullable)navigationController title:(NSString * _Nullable)title;
 /// Hides the Forethought Solve View
 /// If presented with a UINavigationController, this will pop the screen
 /// <ul>
@@ -1012,6 +1026,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) UIModalPresentationStyle modal
 ///   </li>
 /// </ul>
 + (void)showFromNavigationController:(UINavigationController * _Nullable)navigationController;
+/// Show the Forethought Solve View, Either Modally or pushed onto your navigation Stack
+/// If you’re unsure what to use, simply pass in ‘nil’
+/// <ul>
+///   <li>
+///     Parameters:
+///   </li>
+///   <li>
+///     fromNavigationController: The UINavigationController you would like to use to push onto your view stack.
+///   </li>
+///   <li>
+///     title: An optional title to display in the navigation bar. Only visible when pushed onto a navigation stack.
+///   </li>
+/// </ul>
++ (void)showFromNavigationController:(UINavigationController * _Nullable)navigationController title:(NSString * _Nullable)title;
 /// Hides the Forethought Solve View
 /// If presented with a UINavigationController, this will pop the screen
 /// <ul>

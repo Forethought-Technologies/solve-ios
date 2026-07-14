@@ -64,7 +64,7 @@ Attach the Forethought SDK directly onto a navigation stack:
 
 ```swift
 @IBAction func contactSupportTapped() {
-    ForethoughtSDK.show(fromNavigationController: self.navigationController)
+    ForethoughtSDK.show(fromNavigationController: self.navigationController, title?: "title")
 }
 ```
 
